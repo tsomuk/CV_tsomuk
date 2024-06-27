@@ -10,11 +10,16 @@ import SwiftUI
 struct TestView: View {
     
     @State var counter: Int = 0
-    
+
     var body: some View {
         
         VStack(spacing: 30){
             Text("title")
+                .font(.system(size: 70))
+                .fontWeight(.bold)
+                .foregroundStyle(.gray)
+            
+            Text("555")
                 .font(.system(size: 70))
                 .fontWeight(.bold)
                 .foregroundStyle(.gray)
@@ -38,6 +43,9 @@ struct TestView: View {
                 Button {
                     withAnimation {
                         counter += 1
+                        
+                    
+                        
                     }
                 } label: {
                     Image(systemName: "plus.circle")
@@ -45,10 +53,20 @@ struct TestView: View {
                 .scaleEffect(2)
             }
         }
+        
     }
+    
+//    func updatedTimerData() -> DateComponents {
+//        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
+//            guard let composedDate = composedDate else { return }
+//            let timeInterval = Calendar.current.dateComponents([.year,.month, .day, .hour, .minute, .second], from: composedDate, to: .now)
+//        }
+//        return timeInterval
+//    }
 }
 
 
 #Preview {
     TestView()
 }
+

@@ -10,8 +10,8 @@ import SwiftUI
 struct AppsView: View {
     var body: some View {
         NavigationStack{
-            ZStack{
-                Color.gray.opacity(0.2).ignoresSafeArea()
+            ZStack {
+                Color.cvBackground.ignoresSafeArea()
                 
                 ScrollView {
                     VStack(spacing: 15) {

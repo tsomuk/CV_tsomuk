@@ -31,7 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		112D7A992C2CAF4600FC37DE /* CV_tsomuk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV_tsomuk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		112D7A992C2CAF4600FC37DE /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		112D7A9C2C2CAF4600FC37DE /* CV_tsomukApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV_tsomukApp.swift; sourceTree = "<group>"; };
 		112D7A9E2C2CAF4600FC37DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		112D7AA02C2CAF4800FC37DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 		112D7A9A2C2CAF4600FC37DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				112D7A992C2CAF4600FC37DE /* CV_tsomuk.app */,
+				112D7A992C2CAF4600FC37DE /* CV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,9 +201,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		112D7A982C2CAF4600FC37DE /* CV_tsomuk */ = {
+		112D7A982C2CAF4600FC37DE /* CV */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 112D7AA72C2CAF4800FC37DE /* Build configuration list for PBXNativeTarget "CV_tsomuk" */;
+			buildConfigurationList = 112D7AA72C2CAF4800FC37DE /* Build configuration list for PBXNativeTarget "CV" */;
 			buildPhases = (
 				112D7A952C2CAF4600FC37DE /* Sources */,
 				112D7A962C2CAF4600FC37DE /* Frameworks */,
@@ -213,9 +213,9 @@
 			);
 			dependencies = (
 			);
-			name = CV_tsomuk;
+			name = CV;
 			productName = CV_tsomuk;
-			productReference = 112D7A992C2CAF4600FC37DE /* CV_tsomuk.app */;
+			productReference = 112D7A992C2CAF4600FC37DE /* CV.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -246,7 +246,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				112D7A982C2CAF4600FC37DE /* CV_tsomuk */,
+				112D7A982C2CAF4600FC37DE /* CV */,
 			);
 		};
 /* End PBXProject section */
@@ -426,8 +426,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -436,6 +436,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com-tsomuk.CV-tsomuk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,8 +459,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +469,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com-tsomuk.CV-tsomuk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -484,7 +490,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		112D7AA72C2CAF4800FC37DE /* Build configuration list for PBXNativeTarget "CV_tsomuk" */ = {
+		112D7AA72C2CAF4800FC37DE /* Build configuration list for PBXNativeTarget "CV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				112D7AA82C2CAF4800FC37DE /* Debug */,

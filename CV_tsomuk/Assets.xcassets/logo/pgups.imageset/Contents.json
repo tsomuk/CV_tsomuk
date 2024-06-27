@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "profile_bw 2.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "profile_bw 1.jpg",
+      "filename" : "pgups.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "profile_bw.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "112D7A982C2CAF4600FC37DE"
-               BuildableName = "CV_tsomuk.app"
-               BlueprintName = "CV_tsomuk"
+               BuildableName = "CV.app"
+               BlueprintName = "CV"
                ReferencedContainer = "container:CV_tsomuk.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "112D7A982C2CAF4600FC37DE"
-            BuildableName = "CV_tsomuk.app"
-            BlueprintName = "CV_tsomuk"
+            BuildableName = "CV.app"
+            BlueprintName = "CV"
             ReferencedContainer = "container:CV_tsomuk.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "112D7A982C2CAF4600FC37DE"
-            BuildableName = "CV_tsomuk.app"
-            BlueprintName = "CV_tsomuk"
+            BuildableName = "CV.app"
+            BlueprintName = "CV"
             ReferencedContainer = "container:CV_tsomuk.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

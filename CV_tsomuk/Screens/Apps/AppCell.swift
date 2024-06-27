@@ -24,8 +24,10 @@ struct AppCell: View {
                 Text(title)
                     .font(.headline)
                     .fontWeight(.semibold)
+                    .foregroundStyle(.black)
                 Text(description)
                     .font(.caption)
+                    .foregroundStyle(.black)
                 
             }
             Spacer()

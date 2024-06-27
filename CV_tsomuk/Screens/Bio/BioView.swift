@@ -7,13 +7,21 @@
 
 import SwiftUI
 
+private let startDate = DateComponents(calendar: Calendar.current, year: 2023, month: 1, day: 6)
+private let composedDate = Calendar.current.date(from: startDate)
+private var timeInterval = Calendar.current.dateComponents([.year,.month, .day, .hour, .minute, .second], from: composedDate!, to: .now)
+
+
 struct BioView: View {
     var body: some View {
         
         @State var rating = 0
+//        @State var currentTimeInterval: DateComponents
+        
+        
         
         ZStack {
-            Color.gray.opacity(0.2).ignoresSafeArea()
+            Color.cvBackground.ignoresSafeArea()
             VStack(spacing: 15) {
 //                UserInfoCard()
                 UserInfoCardBig()
@@ -48,19 +56,22 @@ struct BioView: View {
                     .font(.title)
                     .bold()
                     .foregroundStyle(.accent)
-                HStack(spacing: 15){
-                    StatViewTopTitle(title: "Years", value: 1)
-                    StatViewTopTitle(title: "Days", value: 164)
-                    StatViewTopTitle(title: "Hours", value: 12)
-                    StatViewTopTitle(title: "Minutes", value: 43)
-                    StatViewTopTitle(title: "Seconds", value: 34)
+                HStack(spacing: 10){
+                    StatViewTopTitle(title: "Years", value: timeInterval.year!)
+                    StatViewTopTitle(title: "Months", value: timeInterval.month!)
+                    StatViewTopTitle(title: "Days", value: timeInterval.day!)
+                    StatViewTopTitle(title: "Hours", value: timeInterval.hour!)
+                    StatViewTopTitle(title: "Minutes", value: timeInterval.minute!)
+                    StatViewTopTitle(title: "Seconds", value: timeInterval.second!)
                 }
                 
                 Spacer()
                 
             }
             .padding(.vertical)
-        }
+        } .onAppear(perform: {
+            timeInterval = Calendar.current.dateComponents([.year,.month, .day, .hour, .minute, .second], from: composedDate!, to: .now)
+        })
     }
 }
 

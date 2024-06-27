@@ -10,8 +10,7 @@ import SwiftUI
 struct WorkView: View {
     var body: some View {
         ZStack {
-            Color.gray.opacity(0.2).ignoresSafeArea()
-            
+            Color.cvBackground.ignoresSafeArea()
 //            ScrollView(.horizontal){
                 WorkCell(title: "Sonotron NDT", description: "01.2020 - present", image: Image(.sonotron))
 //            }
@@ -20,5 +19,5 @@ struct WorkView: View {
 }
 
 #Preview {
-    WorkView()
+        WorkView()
 }

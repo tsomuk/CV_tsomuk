@@ -15,9 +15,9 @@ struct ContactViewItem: View {
     
     var body: some View {
         VStack(spacing: 10) {
-            Text(title)
+            Label(title, systemImage: labelSystemImageName)
                 .font(.title).bold()
-            Label(labelText, systemImage: labelSystemImageName)
+            Text(labelText)
         }
         .tint(.white)
         .foregroundStyle(.white)

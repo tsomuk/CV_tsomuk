@@ -25,7 +25,7 @@ struct UserInfoCardBig: View {
                 Text("iOS Developer")
                     .font(.title3)
                     .fontWeight(.semibold)
-                Label("Tel-Aviv, Isral", systemImage: "mappin.and.ellipse")
+                Label("Tel-Aviv, Israel", systemImage: "mappin.and.ellipse")
                     .font(.subheadline)
                 
                 HStack(spacing: 30) {
@@ -42,7 +42,7 @@ struct UserInfoCardBig: View {
             .background(.accent)
             .clipShape(RoundedRectangle(cornerRadius: 15))
             .padding(.horizontal, 20)
-            .shadow(radius: 20)
+            .shadow(radius: 15)
             
             
                 

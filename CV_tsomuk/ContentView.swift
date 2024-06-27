@@ -12,11 +12,11 @@ struct ContentView: View {
         TabView{
             BioView()
                 .tabItem { Label("Bio", systemImage: "person.crop.square") }
-            Text("Apps")
+            AppsView()
                 .tabItem { Label("Apps", systemImage: "apps.iphone") }
-            Text("Work")
+            WorkView()
                 .tabItem { Label("Work", systemImage: "desktopcomputer") }
-            Text("Education")
+            EducationView()
                 .tabItem { Label("Education", systemImage: "graduationcap") }
             ContactsView()
                 .tabItem { Label("Contacts", systemImage: "phone") }  

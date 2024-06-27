@@ -19,13 +19,13 @@ struct StatViewTopTitle: View {
                 .fontWeight(.bold)
                 .foregroundStyle(.gray)
             Text(String(value))
-                .foregroundStyle(.white)
+                .foregroundStyle(.accent)
         }
     }
 }
 #Preview {
     ZStack {
-        Color(.accent).ignoresSafeArea()
+//        Color(.accent).ignoresSafeArea()
         StatViewTopTitle(title: "Test", value: 32)
     }
 }

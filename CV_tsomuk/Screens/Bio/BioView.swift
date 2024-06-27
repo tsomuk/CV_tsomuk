@@ -22,28 +22,26 @@ struct BioView: View {
                     .bold()
                     .foregroundStyle(.accent)
                     
-                HStack(spacing: 20) {
-                    Text("UIKit").padding(3).border(.black)
-                    Text("SwiftUI").padding(3).border(.black)
-                    Text("Stack").padding(3).border(.black)
-                    Text("Stack").padding(3).border(.black)
-                    Text("Stack").padding(3).border(.black)
+                HStack(spacing: 10) {
+                    SkillCapsule(skill: MockData.skills[0], color: .green)
+                    SkillCapsule(skill: MockData.skills[1], color: .green)
+                    SkillCapsule(skill: MockData.skills[2], color: .green)
+                    SkillCapsule(skill: MockData.skills[3], color: .pink)
+                    
                 }
                 
-                HStack(spacing: 20) {
-                    Text("Stack").padding(3).border(.black)
-                    Text("Stack").padding(3).border(.black)
-                    Text("Stack").padding(3).border(.black)
-                    Text("Stack").padding(3).border(.black)
-                    Text("Stack").padding(3).border(.black)
+                HStack(spacing: 5) {
+                    SkillCapsule(skill: MockData.skills[4], color: .pink)
+                    SkillCapsule(skill: MockData.skills[5], color: .pink)
+                    SkillCapsule(skill: MockData.skills[6], color: .pink)
+                    SkillCapsule(skill: MockData.skills[7], color: .blue)
                 }
                 
-                HStack(spacing: 20) {
-                    Text("Stack").padding(3).border(.black)
-                    Text("Stack").padding(3).border(.black)
-                    Text("Stack").padding(3).border(.black)
-                    Text("Stack").padding(3).border(.black)
-                    Text("Stack").padding(3).border(.black)
+                HStack(spacing: 5) {
+                    SkillCapsule(skill: MockData.skills[8], color: .blue)
+                    SkillCapsule(skill: MockData.skills[9], color: .blue)
+//                    SkillCapsule(skill: MockData.skills[10], color: .pink)
+                    SkillCapsule(skill: MockData.skills[11], color: .blue)
                 }
                 
                 Text("Work Experiens")
@@ -61,6 +59,7 @@ struct BioView: View {
                 Spacer()
                 
             }
+            .padding(.vertical)
         }
     }
 }

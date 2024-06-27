@@ -75,6 +75,7 @@
 				112D7A9E2C2CAF4600FC37DE /* ContentView.swift */,
 				11E3FFAA2C2D500700065E7B /* Models */,
 				112D7AAA2C2CB00C00FC37DE /* Screens */,
+				112D7AB72C2D32BC00FC37DE /* TestView.swift */,
 				112D7AA02C2CAF4800FC37DE /* Assets.xcassets */,
 				112D7AA22C2CAF4800FC37DE /* Preview Content */,
 			);
@@ -131,7 +132,6 @@
 				11E3FFA42C2D431B00065E7B /* UserInfoCardBig.swift */,
 				11E3FFA22C2D41D200065E7B /* StatViewTopTitle.swift */,
 				11E3FFA62C2D441200065E7B /* StatViewBottomTitle.swift */,
-				112D7AB72C2D32BC00FC37DE /* TestView.swift */,
 				11E3FFA82C2D4CFA00065E7B /* SkillCapsule.swift */,
 			);
 			path = Components;

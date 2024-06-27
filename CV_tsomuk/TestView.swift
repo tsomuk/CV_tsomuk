@@ -20,26 +20,34 @@ struct TestView: View {
                 .foregroundStyle(.gray)
             
             HStack(spacing: 40){
-                Button ("", systemImage: "minus.circle") {
+                
+                Button {
                     withAnimation {
                         counter -= 1
                     }
+                } label : {
+                    Image(systemName: "minus.circle")
                 }
+                .scaleEffect(2)
                 
                 Text("\(counter)")
                     .font(.system(size: 50))
                     .frame(width: 100)
                     .contentTransition(.numericText(value: Double(counter)))
                 
-                Button ("", systemImage: "plus.circle") {
+                Button {
                     withAnimation {
                         counter += 1
                     }
+                } label: {
+                    Image(systemName: "plus.circle")
                 }
+                .scaleEffect(2)
             }
         }
     }
 }
+
 
 #Preview {
     TestView()

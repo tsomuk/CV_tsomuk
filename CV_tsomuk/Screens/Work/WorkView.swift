@@ -9,8 +9,13 @@ import SwiftUI
 
 struct WorkView: View {
     var body: some View {
-        Label("Work", systemImage: "desktopcomputer")
-            .font(.largeTitle)
+        ZStack {
+            Color.gray.opacity(0.2).ignoresSafeArea()
+            
+//            ScrollView(.horizontal){
+                WorkCell(title: "Sonotron NDT", description: "01.2020 - present", image: Image(.sonotron))
+//            }
+        }
     }
 }
 

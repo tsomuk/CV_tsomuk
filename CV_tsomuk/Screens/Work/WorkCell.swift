@@ -9,31 +9,33 @@ import SwiftUI
 
 struct WorkCell: View {
     
-    var title: String
-    var description: String
-    var image: Image
+    var work: WorkModel
     
     var body: some View {
         VStack(spacing: 20) {
             HStack(alignment: .top, spacing: 15) {
-                image
+                Image(work.imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 70, height: 70)
                     .clipShape(RoundedRectangle(cornerRadius: 15))
                 VStack(alignment: .leading){
-                    Text(title)
+                    Text(work.companyName)
                         .font(.title)
                         .fontWeight(.semibold)
                         .foregroundStyle(.black)
-                    Text(description)
+                    Text(work.position)
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(.black)
+                    Text(work.periodOfWork)
                         .font(.caption)
                         .foregroundStyle(.black)
                     
                 }
                 Spacer()
             }
-            Text("Maintain Consistency: Consistency is key when using fonts in your iOS app. Choose a primary font or a font pairing that aligns with your app’s branding and stick to it throughout the app. Consistent font usage creates a cohesive and polished user experience.Maintain Consistency: Consistency is key when using fonts in your iOS app. Choose a primary font or a font pairing that aligns with your app’s branding and stick to it throughout the app. Consistent font usage creates a cohesive and polished user experience.Maintain Consistency: Consistency is key when using fonts in your iOS app. Choose a primary font or a font pairing that aligns with your app’s branding and stick to it throughout the app. Consistent font usage creates a cohesive and polished user experience.Maintain Consistency: Consistency is key when using fonts in your iOS app. Choose a primary font or a font pairing that aligns with your app’s branding and stick to it throughout the app. Consistent font usage creates a cohesive and polished user experience.Maintain Consistency: Consistency is key when using fonts in your iOS app. Choose a primary font or a font pairing that aligns with your app’s branding and stick to it throughout the app. Consistent font usage creates a cohesive and polished user experience.Maintain Consistency: Consistency is key when using fonts in your iOS app. Choose a primary font or a font pairing that aligns with your app’s branding and stick to it throughout the app. Consistent font usage creates a cohesive and polished user experience.")
+            Text(work.description)
                 .font(.caption)
                 .foregroundStyle(.black)
             Spacer()
@@ -44,10 +46,10 @@ struct WorkCell: View {
         .background(.white)
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .shadow(radius: 3, y: 2)
-        .padding()
+        .padding(.horizontal)
     }
 }
 
 #Preview {
-    WorkCell(title: "Sonotron NDT", description: "01.2020 - present", image: Image(.sonotron))
+    WorkCell(work: WorkModel.dataBase[0])
 }

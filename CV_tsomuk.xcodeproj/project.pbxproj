@@ -23,6 +23,8 @@
 		119DECBC2C2D62A1005BB723 /* TextTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DECBB2C2D62A1005BB723 /* TextTest.swift */; };
 		119DECBE2C2D687D005BB723 /* WorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DECBD2C2D687D005BB723 /* WorkCell.swift */; };
 		119DECC02C2D6885005BB723 /* EducationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DECBF2C2D6885005BB723 /* EducationCell.swift */; };
+		119DECC42C2DD68D005BB723 /* WorkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DECC32C2DD68D005BB723 /* WorkModel.swift */; };
+		119DECC62C2DDBB1005BB723 /* EducationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DECC52C2DDBB1005BB723 /* EducationModel.swift */; };
 		11E3FFA32C2D41D200065E7B /* StatViewTopTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3FFA22C2D41D200065E7B /* StatViewTopTitle.swift */; };
 		11E3FFA52C2D431B00065E7B /* UserInfoCardBig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3FFA42C2D431B00065E7B /* UserInfoCardBig.swift */; };
 		11E3FFA72C2D441200065E7B /* StatViewBottomTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3FFA62C2D441200065E7B /* StatViewBottomTitle.swift */; };
@@ -48,6 +50,8 @@
 		119DECBB2C2D62A1005BB723 /* TextTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTest.swift; sourceTree = "<group>"; };
 		119DECBD2C2D687D005BB723 /* WorkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCell.swift; sourceTree = "<group>"; };
 		119DECBF2C2D6885005BB723 /* EducationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationCell.swift; sourceTree = "<group>"; };
+		119DECC32C2DD68D005BB723 /* WorkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkModel.swift; sourceTree = "<group>"; };
+		119DECC52C2DDBB1005BB723 /* EducationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationModel.swift; sourceTree = "<group>"; };
 		11E3FFA22C2D41D200065E7B /* StatViewTopTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatViewTopTitle.swift; sourceTree = "<group>"; };
 		11E3FFA42C2D431B00065E7B /* UserInfoCardBig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCardBig.swift; sourceTree = "<group>"; };
 		11E3FFA62C2D441200065E7B /* StatViewBottomTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatViewBottomTitle.swift; sourceTree = "<group>"; };
@@ -194,6 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				11E3FFAB2C2D501600065E7B /* MockData.swift */,
+				119DECC32C2DD68D005BB723 /* WorkModel.swift */,
+				119DECC52C2DDBB1005BB723 /* EducationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -272,12 +278,14 @@
 				119DECBC2C2D62A1005BB723 /* TextTest.swift in Sources */,
 				11E3FFAC2C2D501600065E7B /* MockData.swift in Sources */,
 				119DECB72C2D5F92005BB723 /* EducationView.swift in Sources */,
+				119DECC62C2DDBB1005BB723 /* EducationModel.swift in Sources */,
 				119DECC02C2D6885005BB723 /* EducationCell.swift in Sources */,
 				112D7AB82C2D32BC00FC37DE /* TestView.swift in Sources */,
 				119DECB52C2D5F88005BB723 /* WorkView.swift in Sources */,
 				11E3FFA52C2D431B00065E7B /* UserInfoCardBig.swift in Sources */,
 				11E3FFA92C2D4CFB00065E7B /* SkillCapsule.swift in Sources */,
 				112D7AB62C2D2B1000FC37DE /* UserInfoCard.swift in Sources */,
+				119DECC42C2DD68D005BB723 /* WorkModel.swift in Sources */,
 				11E3FFA72C2D441200065E7B /* StatViewBottomTitle.swift in Sources */,
 				119DECBE2C2D687D005BB723 /* WorkCell.swift in Sources */,
 				119DECB92C2D600F005BB723 /* AppCell.swift in Sources */,

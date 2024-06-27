@@ -9,27 +9,24 @@ import SwiftUI
 
 struct EducationCell: View {
     
-    var title: String
-    var speciality: String
-    var description: String
-    var image: Image
+    var educationModel: EducationModel
     
     var body: some View {
         VStack(spacing: 20) {
             HStack(alignment: .top, spacing: 15) {
-                image
+                Image(educationModel.imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 70, height: 70)
                     .clipShape(RoundedRectangle(cornerRadius: 15))
                 VStack(alignment: .leading){
-                    Text(title)
+                    Text(educationModel.universityName)
                         .font(.title2)
                         .fontWeight(.bold)
-                    Text(speciality)
+                    Text(educationModel.speciality)
                         .fontWeight(.semibold)
                         .font(.caption)
-                    Text(description)
+                    Text(educationModel.periodOfStudy)
                         .font(.caption)
                     
                 }
@@ -37,7 +34,7 @@ struct EducationCell: View {
                 
                 Spacer()
             }
-            Text("Maintain Consistency: Consistency is key when using fonts in your iOS app. Choose a primary font or a font pairing that aligns with your app’s branding and stick to it throughout the app. Consistent font usage creates a cohesive and polished user experience.Maintain Consistency: Consistency is key when using fonts in your iOS app. ")
+            Text(educationModel.description)
                 .font(.caption)
                 .foregroundStyle(.black)
             Spacer()
@@ -54,5 +51,5 @@ struct EducationCell: View {
 
 
 #Preview {
-    EducationCell(title: "PGUPS", speciality: "Automation technology", description: "09.2009 - 06.2014", image: Image(.sonotron))
+    EducationCell(educationModel: EducationModel.dataBase[0])
 }

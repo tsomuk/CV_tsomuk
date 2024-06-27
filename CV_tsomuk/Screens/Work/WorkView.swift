@@ -11,9 +11,12 @@ struct WorkView: View {
     var body: some View {
         ZStack {
             Color.cvBackground.ignoresSafeArea()
-//            ScrollView(.horizontal){
-                WorkCell(title: "Sonotron NDT", description: "01.2020 - present", image: Image(.sonotron))
-//            }
+            
+            VStack(spacing: 10) {
+                ForEach(WorkModel.dataBase, id: \.self) { work in
+                    WorkCell(work: work)
+                }
+            }
         }
     }
 }

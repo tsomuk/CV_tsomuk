@@ -10,15 +10,22 @@ import SwiftUI
 struct WorkView: View {
     var body: some View {
         NavigationStack{
-            ScrollView{
-                VStack(spacing: 10) {
+            ScrollView(.horizontal) {
+                HStack(spacing: 10) {
                     ForEach(WorkModel.dataBase) { work in
                         WorkCell(work: work)
+                            .scrollTransition(axis: .horizontal) { content, phase in
+                                content.scaleEffect(
+                                    x: phase.isIdentity ? 1 : 0.8,
+                                    y: phase.isIdentity ? 1 : 0.8
+                                )
+                            }
                     }
                 }
-                .padding(.vertical)
             }
+            .contentMargins(20)
             .background(.cvBackground)
+            .scrollIndicators(.hidden)
             .navigationTitle("Work Experience")
         }
     }

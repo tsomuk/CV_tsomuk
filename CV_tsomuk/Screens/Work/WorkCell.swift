@@ -19,39 +19,42 @@ struct WorkCell: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 70, height: 70)
                     .clipShape(RoundedRectangle(cornerRadius: 15))
-                VStack(alignment: .leading){
-                    Text(work.companyName)
+                
+                VStack(alignment: .leading, spacing: 4){
+                    Text(work.position)
                         .font(.title2)
                         .fontWeight(.semibold)
-                    Text(work.position)
+                    Text(work.companyName)
+                        .font(.subheadline)
+                    Text(work.periodOfWork)
                         .font(.subheadline)
                         .fontWeight(.semibold)
-                    Text(work.periodOfWork)
-                        .font(.caption)
                     
                 }
                 Spacer()
             }
             Text(work.description)
-                .font(.caption)
+                .font(.body)
 
-            
+            Spacer()
         }
         .padding(.horizontal)
         .padding(.vertical, 15)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.cvGray)
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .shadow(radius: 3, y: 2)
-        .padding(.horizontal)
+        
+        .containerRelativeFrame(.horizontal)
     }
 }
 
 #Preview {
-    VStack{
-        WorkCell(work: WorkModel.dataBase[0])
-        WorkCell(work: WorkModel.dataBase[0])
-        WorkCell(work: WorkModel.dataBase[0])
-        WorkCell(work: WorkModel.dataBase[0])
+    ScrollView (.horizontal){
+        HStack{
+            WorkCell(work: WorkModel.dataBase[0])
+            WorkCell(work: WorkModel.dataBase[0])
+            WorkCell(work: WorkModel.dataBase[0])
+            WorkCell(work: WorkModel.dataBase[0])
+        }
     }
 }

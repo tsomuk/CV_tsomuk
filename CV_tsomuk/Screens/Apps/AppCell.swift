@@ -9,32 +9,28 @@ import SwiftUI
 
 struct AppCell: View {
     
-    var title: String
-    var description: String
-    var image: Image
+    var app: AppModel
     
     var body: some View {
         HStack(spacing: 15){
-            image
+            Image(app.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 70, height: 70)
                 .clipShape(RoundedRectangle(cornerRadius: 15))
             VStack(alignment: .leading){
-                Text(title)
+                Text(app.appTitle)
                     .font(.headline)
                     .fontWeight(.semibold)
-                    .foregroundStyle(.black)
-                Text(description)
+                Text(app.description)
                     .font(.caption)
-                    .foregroundStyle(.black)
                 
             }
             Spacer()
         }
-        .padding(.horizontal)
+        .padding()
         .frame(maxWidth: .infinity, minHeight: 90)
-        .background(.white)
+        .background(.cvGray)
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .shadow(radius: 3, y: 2)
         .padding(.horizontal)
@@ -44,6 +40,7 @@ struct AppCell: View {
 #Preview {
     ZStack{
         Color(.gray.withAlphaComponent(0.2)).ignoresSafeArea()
-    AppCell(title: "Sonotron", description: "Basic tutorial app for the Sonotron units world wide localizied", image: Image(.sonotron))
+        AppCell(app: AppModel.dataBase[0])
     }
+    .previewLayout(.sizeThatFits) // Не работает
 }

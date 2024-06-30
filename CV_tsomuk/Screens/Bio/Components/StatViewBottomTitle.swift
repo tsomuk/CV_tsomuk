@@ -20,7 +20,6 @@ struct StatViewBottomTitle: View {
             Text(title)
                 .font(.subheadline)
         }
-        .foregroundStyle(.white)
     }
     
 }

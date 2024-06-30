@@ -10,17 +10,15 @@ import SwiftUI
 struct ContactsView: View {
     var body: some View {
         NavigationStack {
-            ZStack {
+            ZStack{
                 Color.cvBackground.ignoresSafeArea()
                 VStack(spacing: 20){
-                    ContactViewItem(title: "Telegram", labelText: "@tsomuk", labelSystemImageName: "message")
-                    ContactViewItem(title: "Email", labelText: "tsomuk@me.com", labelSystemImageName: "envelope")
-                    ContactViewItem(title: "Mobile", labelText: "053-902-72-52", labelSystemImageName: "phone")
-                    ContactViewItem(title: "Github", labelText: "github.com/tsomuk", labelSystemImageName: "text.and.command.macwindow")
-                    
+                    ForEach(ContactModel.dataBase) { contact in
+                        ContactViewItem(contactModel: contact)
+                    }
                 }
-                .navigationTitle("Contacts")
             }
+            .navigationTitle("Contacts")
         }
     }
 }

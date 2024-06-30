@@ -19,10 +19,10 @@ struct TestView: View {
                 .fontWeight(.bold)
                 .foregroundStyle(.gray)
             
-            Text("555")
-                .font(.system(size: 70))
-                .fontWeight(.bold)
-                .foregroundStyle(.gray)
+//            Text("555")
+//                .font(.system(size: 70))
+//                .fontWeight(.bold)
+//                .foregroundStyle(.gray)
             
             HStack(spacing: 40){
                 

@@ -15,11 +15,13 @@ struct SkillCapsule: View {
     var body: some View {
         Text(skill)
             .fontWeight(.semibold)
-            .foregroundStyle(.white)
-            .padding(.vertical, 10)
+            .padding(.vertical, 5)
             .padding(.horizontal)
-            .background(color)
-            .clipShape(Capsule())
+            .overlay(
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(color, lineWidth: 3)
+            )
+        
     }
 }
 
@@ -30,4 +32,5 @@ struct SkillCapsule: View {
         SkillCapsule(skill: MockData.skills[5], color: .pink)
         SkillCapsule(skill: MockData.skills[6], color: .pink)
     }
+    .background(.blue.opacity(0.1))
 }

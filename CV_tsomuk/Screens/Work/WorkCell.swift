@@ -12,7 +12,7 @@ struct WorkCell: View {
     var work: WorkModel
     
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 15) {
             HStack(alignment: .top, spacing: 15) {
                 Image(work.imageName)
                     .resizable()
@@ -21,29 +21,26 @@ struct WorkCell: View {
                     .clipShape(RoundedRectangle(cornerRadius: 15))
                 VStack(alignment: .leading){
                     Text(work.companyName)
-                        .font(.title)
+                        .font(.title2)
                         .fontWeight(.semibold)
-                        .foregroundStyle(.black)
                     Text(work.position)
                         .font(.subheadline)
                         .fontWeight(.semibold)
-                        .foregroundStyle(.black)
                     Text(work.periodOfWork)
                         .font(.caption)
-                        .foregroundStyle(.black)
                     
                 }
                 Spacer()
             }
             Text(work.description)
                 .font(.caption)
-                .foregroundStyle(.black)
-            Spacer()
+
             
         }
-        .padding()
+        .padding(.horizontal)
+        .padding(.vertical, 15)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.white)
+        .background(.cvGray)
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .shadow(radius: 3, y: 2)
         .padding(.horizontal)
@@ -51,5 +48,10 @@ struct WorkCell: View {
 }
 
 #Preview {
-    WorkCell(work: WorkModel.dataBase[0])
+    VStack{
+        WorkCell(work: WorkModel.dataBase[0])
+        WorkCell(work: WorkModel.dataBase[0])
+        WorkCell(work: WorkModel.dataBase[0])
+        WorkCell(work: WorkModel.dataBase[0])
+    }
 }

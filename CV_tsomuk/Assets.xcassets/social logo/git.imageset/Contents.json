@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "git.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "telegram-cloud-photo-size-2-5451627308101262333-x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },

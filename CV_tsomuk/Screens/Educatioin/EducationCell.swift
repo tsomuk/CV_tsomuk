@@ -12,7 +12,7 @@ struct EducationCell: View {
     var educationModel: EducationModel
     
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 15) {
             HStack(alignment: .top, spacing: 15) {
                 Image(educationModel.imageName)
                     .resizable()
@@ -30,19 +30,19 @@ struct EducationCell: View {
                         .font(.caption)
                     
                 }
-                .foregroundStyle(.black)
+                
                 
                 Spacer()
             }
             Text(educationModel.description)
                 .font(.caption)
-                .foregroundStyle(.black)
-            Spacer()
+                
+            
             
         }
         .padding()
-        .frame(maxWidth: .infinity, maxHeight: 300)
-        .background(.white)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.cvGray)
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .shadow(radius: 3, y: 2)
         .padding(.horizontal)
@@ -51,5 +51,9 @@ struct EducationCell: View {
 
 
 #Preview {
-    EducationCell(educationModel: EducationModel.dataBase[0])
+    VStack{
+        EducationCell(educationModel: EducationModel.dataBase[0])
+        EducationCell(educationModel: EducationModel.dataBase[0])
+        EducationCell(educationModel: EducationModel.dataBase[0])
+    }
 }

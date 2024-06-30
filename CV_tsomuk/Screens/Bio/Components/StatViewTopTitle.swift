@@ -15,17 +15,20 @@ struct StatViewTopTitle: View {
     var body: some View {
         VStack{
             Text(title)
-                .font(.callout)
-                .fontWeight(.bold)
+                .font(.callout).bold()
                 .foregroundStyle(.gray)
+            
             Text(String(value))
-                .foregroundStyle(.accent)
+                .font(.title3)
         }
+        .frame(width: 100)
     }
 }
+
 #Preview {
     ZStack {
-//        Color(.accent).ignoresSafeArea()
+        Color(.pink.opacity(0.2)).ignoresSafeArea()
         StatViewTopTitle(title: "Test", value: 32)
+            
     }
 }

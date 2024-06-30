@@ -9,14 +9,17 @@ import SwiftUI
 
 struct WorkView: View {
     var body: some View {
-        ZStack {
-            Color.cvBackground.ignoresSafeArea()
-            
-            VStack(spacing: 10) {
-                ForEach(WorkModel.dataBase, id: \.self) { work in
-                    WorkCell(work: work)
+        NavigationStack{
+            ScrollView{
+                VStack(spacing: 10) {
+                    ForEach(WorkModel.dataBase) { work in
+                        WorkCell(work: work)
+                    }
                 }
+                .padding(.vertical)
             }
+            .background(.cvBackground)
+            .navigationTitle("Work Experience")
         }
     }
 }

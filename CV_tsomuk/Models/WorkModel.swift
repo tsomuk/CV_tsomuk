@@ -8,7 +8,7 @@
 import Foundation
 
 struct WorkModel {
-    
+    let id: String = UUID().uuidString
     let companyName: String
     let position: String
     let periodOfWork : String
@@ -45,5 +45,5 @@ struct WorkModel {
     ]
 }
 
-extension WorkModel : Hashable {}
+extension WorkModel : Hashable, Identifiable {}
 

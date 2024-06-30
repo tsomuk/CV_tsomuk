@@ -9,15 +9,17 @@ import SwiftUI
 
 struct EducationView: View {
     var body: some View {
-        
-        ZStack {
-            Color.cvBackground.ignoresSafeArea()
-            VStack(spacing: 20) {
-                ForEach(EducationModel.dataBase, id: \.self) { ed in
-                    EducationCell(educationModel: ed)
+        NavigationStack{
+            ScrollView{
+                VStack(spacing: 10) {
+                    ForEach(EducationModel.dataBase) { ed in
+                        EducationCell(educationModel: ed)
+                    }
                 }
+                .padding(.vertical)
             }
-            .padding(.vertical)
+            .background(.cvBackground)
+            .navigationTitle("Education")
         }
     }
 }

@@ -10,6 +10,7 @@ import Foundation
 
 struct EducationModel {
     
+    let id: String = UUID().uuidString
     let universityName: String
     let speciality: String
     let periodOfStudy : String
@@ -38,4 +39,4 @@ struct EducationModel {
     ]
 }
 
-extension EducationModel : Hashable {}
+extension EducationModel : Hashable, Identifiable {}

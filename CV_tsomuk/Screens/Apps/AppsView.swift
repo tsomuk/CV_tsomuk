@@ -10,23 +10,21 @@ import SwiftUI
 struct AppsView: View {
     var body: some View {
         NavigationStack{
-            ZStack {
-                Color.cvBackground.ignoresSafeArea()
-                
                 ScrollView {
                     VStack(spacing: 15) {
-                        ForEach(0..<7) { _ in
-                            AppCell(title: "Sonotron", description: "descriction", image: Image(.sonotron))
+                        ForEach(AppModel.dataBase) { app in
+                            AppCell(app: app)
                         }
-                        .navigationTitle("Applications")
-                        Spacer()
                     }
-                    .padding(.vertical)
+                    .navigationTitle("My applications")
+                    Spacer()
                 }
-            }
+                .padding(.vertical)
+                .background(.cvBackground)
         }
     }
 }
+
 
 #Preview {
     AppsView()

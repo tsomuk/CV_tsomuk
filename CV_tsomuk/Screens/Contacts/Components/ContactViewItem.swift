@@ -9,33 +9,46 @@ import SwiftUI
 
 struct ContactViewItem: View {
     
-    var title: String
-    var labelText: String
-    var labelSystemImageName: String
+    var contactModel: ContactModel
     
     var body: some View {
-        VStack(spacing: 10) {
-            Label(title, systemImage: labelSystemImageName)
-                .font(.title).bold()
-            Text(labelText)
+        HStack {
+            
+            Image(contactModel.imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 100)
+                .clipShape(RoundedRectangle(cornerRadius: 15))
+            
+            Spacer()
+            
+            VStack(){
+//                Text(contactModel.contactTitle)
+//                    .font(.title3)
+//                    .fontWeight(.semibold)
+                
+                Text(contactModel.description)
+                    .font(.title2).bold()
+                
+                
+                
+                
+            }
+            Spacer()
         }
-        .tint(.white)
-        .foregroundStyle(.white)
+        .padding(.horizontal)
         .frame(maxWidth: .infinity, maxHeight: 100)
-        .background(.accent.gradient)
-        .clipShape(RoundedRectangle(cornerRadius: 20))
-        .padding(.horizontal, 30)
-        .shadow(radius: 10, x: 0, y: 10)
-
-    }
+        .background(.cvGray)
+        .clipShape(RoundedRectangle(cornerRadius: 15))
+        .shadow(radius: 3, y: 2)
+        .padding(.horizontal)
         
+        
+        
+    }
 }
 
 
 #Preview {
-    ContactViewItem(
-        title: "Sales test",
-        labelText: "sales@sonotronndt.com",
-        labelSystemImageName: "envelope"
-    )
+    ContactViewItem(contactModel: ContactModel.dataBase[0])
 }

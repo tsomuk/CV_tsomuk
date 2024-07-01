@@ -51,10 +51,9 @@ struct WorkCell: View {
 #Preview {
     ScrollView (.horizontal){
         HStack{
-            WorkCell(work: WorkModel.dataBase[0])
-            WorkCell(work: WorkModel.dataBase[0])
-            WorkCell(work: WorkModel.dataBase[0])
-            WorkCell(work: WorkModel.dataBase[0])
+            ForEach(0..<4) { _ in
+                WorkCell(work: WorkModel.dataBase[0])
+            }
         }
     }
 }

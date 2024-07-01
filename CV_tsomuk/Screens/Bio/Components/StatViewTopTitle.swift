@@ -18,8 +18,9 @@ struct StatViewTopTitle: View {
                 .font(.callout).bold()
                 .foregroundStyle(.gray)
             
-            Text(String(value))
-                .font(.title3)
+            Text(String(format: "%02d", value))
+                .font(.title2.bold())
+                .contentTransition(.numericText())
         }
         .frame(width: 100)
     }
@@ -28,7 +29,7 @@ struct StatViewTopTitle: View {
 #Preview {
     ZStack {
         Color(.pink.opacity(0.2)).ignoresSafeArea()
-        StatViewTopTitle(title: "Test", value: 32)
+        StatViewTopTitle(title: "Test", value: 3)
             
     }
 }

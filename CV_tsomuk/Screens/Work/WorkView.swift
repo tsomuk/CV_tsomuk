@@ -16,14 +16,15 @@ struct WorkView: View {
                         WorkCell(work: work)
                             .scrollTransition(axis: .horizontal) { content, phase in
                                 content.scaleEffect(
-                                    x: phase.isIdentity ? 1 : 0.8,
-                                    y: phase.isIdentity ? 1 : 0.8
+                                    x: phase.isIdentity ? 1 : 0.6,
+                                    y: phase.isIdentity ? 1 : 0.6
                                 )
                             }
                     }
                 }
             }
             .contentMargins(20)
+            .scrollTargetBehavior(.paging)
             .background(.cvBackground)
             .scrollIndicators(.hidden)
             .navigationTitle("Work Experience")
@@ -32,5 +33,5 @@ struct WorkView: View {
 }
 
 #Preview {
-        WorkView()
+    WorkView()
 }

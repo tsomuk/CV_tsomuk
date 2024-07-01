@@ -23,19 +23,19 @@ struct UserInfoCard: View {
                 Label("Tel-Aviv, Israel", systemImage: "mappin.and.ellipse")
                     .font(.title3)
                 
-                HStack(spacing: 30) {
-                    StatViewTopTitle(title: "Commits", value: 223)
-                    StatViewTopTitle(title: "Total PRs", value: 22)
+                HStack(spacing: 20) {
+                    StatViewBottomTitle(title: "Commits", value: 297)
+                    StatViewBottomTitle(title: "Total PRs", value: 22)
+                    StatViewBottomTitle(title: "Projects", value: 14)
                     
                 }
                 .padding(.bottom, 20)
                 
             }
             .frame(maxWidth: .infinity, maxHeight: 300)
-            .background(.white)
+            .background(.cvGray)
             .clipShape(RoundedRectangle(cornerRadius: 15))
             .padding(.horizontal, 20)
-            
             .shadow(radius: 20)
             
             VStack(spacing: 0){
@@ -48,7 +48,6 @@ struct UserInfoCard: View {
             Text("")
                     .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 250)
 //                    .background(.pink)
-                
             }
             
         }

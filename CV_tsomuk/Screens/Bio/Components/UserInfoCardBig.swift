@@ -33,9 +33,9 @@ struct UserInfoCardBig: View {
                 .font(.subheadline)
             
             HStack(spacing: 30) {
-                StatViewBottomTitle(title: "Commits", value: 297)
+                StatViewBottomTitle(title: "Contributions", value: 304)
                 StatViewBottomTitle(title: "Total PRs", value: 22)
-                StatViewBottomTitle(title: "Projects", value: 14)
+                StatViewBottomTitle(title: "Repositories", value: 14)
                 
             } .padding(.top, 30)
         }

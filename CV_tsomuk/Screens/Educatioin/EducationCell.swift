@@ -12,33 +12,28 @@ struct EducationCell: View {
     var educationModel: EducationModel
     
     var body: some View {
-        VStack(spacing: 15) {
-            HStack(alignment: .top, spacing: 15) {
+        VStack(alignment: .leading, spacing: 15) {
+            HStack(spacing: 15) {
                 Image(educationModel.imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 70, height: 70)
                     .clipShape(RoundedRectangle(cornerRadius: 15))
-                VStack(alignment: .leading){
+                VStack(alignment: .leading, spacing: 5){
                     Text(educationModel.universityName)
-                        .font(.title2)
-                        .fontWeight(.bold)
+                        .font(.title3)
                     Text(educationModel.speciality)
                         .fontWeight(.semibold)
-                        .font(.caption)
+                        .font(.callout).bold()
                     Text(educationModel.periodOfStudy)
-                        .font(.caption)
+                        .font(.callout)
                     
                 }
-                
                 
                 Spacer()
             }
             Text(educationModel.description)
-                .font(.caption)
-                
-            
-            
+                .font(.callout)
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -51,9 +46,8 @@ struct EducationCell: View {
 
 
 #Preview {
-    VStack{
+    ScrollView{
         EducationCell(educationModel: EducationModel.dataBase[0])
-        EducationCell(educationModel: EducationModel.dataBase[0])
-        EducationCell(educationModel: EducationModel.dataBase[0])
+        EducationCell(educationModel: EducationModel.dataBase[1])
     }
 }

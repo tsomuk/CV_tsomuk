@@ -17,38 +17,30 @@ struct ContactViewItem: View {
             Image(contactModel.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 100)
-                .clipShape(RoundedRectangle(cornerRadius: 15))
+                .frame(width: 70)
             
             Spacer()
             
-            VStack(){
-//                Text(contactModel.contactTitle)
-//                    .font(.title3)
-//                    .fontWeight(.semibold)
-                
                 Text(contactModel.description)
-                    .font(.title2).bold()
+                .font(.title2)
+                .fontWeight(.semibold)
                 
-                
-                
-                
-            }
             Spacer()
         }
         .padding(.horizontal)
-        .frame(maxWidth: .infinity, maxHeight: 100)
+        .frame(maxWidth: .infinity, maxHeight: 90)
         .background(.cvGray)
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .shadow(radius: 3, y: 2)
-        .padding(.horizontal)
-        
-        
-        
     }
 }
 
 
 #Preview {
-    ContactViewItem(contactModel: ContactModel.dataBase[0])
+    VStack{
+        ContactViewItem(contactModel: ContactModel.dataBaseColor[0])
+        ContactViewItem(contactModel: ContactModel.dataBaseColor2[0])
+        ContactViewItem(contactModel: ContactModel.dataBaseMinimalistic[0])
+    }
+    .padding(.horizontal)
 }

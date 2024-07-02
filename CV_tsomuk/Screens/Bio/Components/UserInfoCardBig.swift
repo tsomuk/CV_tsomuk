@@ -21,11 +21,10 @@ struct UserInfoCardBig: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 110)
                 .clipShape(Circle())
-                .shadow(radius: 20)
+                .shadow(radius: 3, y: 3)
             
             Text("Nikita Tsomuk")
-                .font(.title2)
-                .fontWeight(.bold)
+                .font(.title2).bold()
             Text("iOS Developer")
                 .font(.title3)
                 .fontWeight(.semibold)
@@ -39,6 +38,7 @@ struct UserInfoCardBig: View {
                 
             } .padding(.top, 30)
         }
+        .foregroundStyle(.white)
         .padding(.vertical, 40)
         .frame(maxWidth: .infinity)
         .background(MockData.gradientPurple)

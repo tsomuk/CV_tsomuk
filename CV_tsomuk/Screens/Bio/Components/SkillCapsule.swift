@@ -19,9 +19,8 @@ struct SkillCapsule: View {
             .padding(.horizontal)
             .overlay(
                 RoundedRectangle(cornerRadius: 20)
-                    .stroke(color, lineWidth: 3)
+                    .stroke(.accent, lineWidth: 3)
             )
-        
     }
 }
 

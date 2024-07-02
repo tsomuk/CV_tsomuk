@@ -11,10 +11,14 @@ struct EducationView: View {
     var body: some View {
         NavigationStack{
             ScrollView{
-                VStack(spacing: 10) {
+                VStack(alignment: .leading, spacing: 10) {
                     ForEach(EducationModel.dataBase) { ed in
                         EducationCell(educationModel: ed)
                     }
+                    Text("Languages")
+                        .font(.largeTitle).bold()
+                        .padding(.leading, 20)
+                    LanguageCell()
                 }
                 .padding(.vertical)
             }

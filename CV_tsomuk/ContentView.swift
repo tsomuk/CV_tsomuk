@@ -15,7 +15,6 @@ struct ContentView: View {
             AppsView()
                 .tabItem { Label("Apps", systemImage: "apps.iphone") }
             WorkView()
-//            TestView()
                 .tabItem { Label("Work", systemImage: "desktopcomputer") }
             EducationView()
                 .tabItem { Label("Education", systemImage: "graduationcap") }

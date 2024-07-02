@@ -23,7 +23,7 @@ struct AppCell: View {
                     .font(.headline)
                     .fontWeight(.semibold)
                 Text(app.description)
-                    .font(.caption)
+                    .font(.footnote)
                 
             }
             Spacer()

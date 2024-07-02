@@ -21,12 +21,11 @@ struct StatViewBottomTitle: View {
                 .font(.subheadline)
         }
     }
-    
 }
 
 #Preview {
     ZStack{
-        Color.accentColor.ignoresSafeArea()
+        Color.accentColor.opacity(0.5).ignoresSafeArea()
         StatViewBottomTitle(title: "Test", value: 32)
     }
 }

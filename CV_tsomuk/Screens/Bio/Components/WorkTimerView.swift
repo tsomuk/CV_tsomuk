@@ -11,8 +11,6 @@ private let startDate = DateComponents(calendar: Calendar.current, year: 2023, m
 
 private let composedDate = Calendar.current.date(from: startDate)
 
-
-
 struct WorkTimerView: View {
     
     @State private var timeInterval = Calendar.current.dateComponents([.year,.month, .day, .hour, .minute, .second], from: composedDate!, to: .now)
@@ -22,7 +20,7 @@ struct WorkTimerView: View {
         VStack(spacing: 10) {
             Text("Work Experience")
                 .font(.title).bold()
-
+            
             HStack(spacing: 10){
                 StatViewTopTitle(title: "Years", value: timeInterval.year!)
                 StatViewTopTitle(title: "Months", value: timeInterval.month!)

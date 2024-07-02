@@ -11,19 +11,19 @@ struct LanguageCell: View {
     var body: some View {
         HStack(spacing: 15) {
             
-            ExtractedView(image: Image(.uk), level: "Proficient")
+            FlagView(image: Image(.uk), level: "Proficient")
             
-            ExtractedView(image: Image(.israel), level: "Basic")
+            FlagView(image: Image(.israel), level: "Basic")
             
-            ExtractedView(image: Image(.rus), level: "Native")
-             
+            FlagView(image: Image(.rus), level: "Native")
+            
         }
         .padding()
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(.cvGray)
-            .clipShape(RoundedRectangle(cornerRadius: 15))
-            .shadow(radius: 3, y: 2)
-            .padding(.horizontal)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.cvGray)
+        .clipShape(RoundedRectangle(cornerRadius: 15))
+        .shadow(radius: 3, y: 2)
+        .padding(.horizontal)
     }
 }
 
@@ -32,9 +32,9 @@ struct LanguageCell: View {
         LanguageCell()
         
     }
-    }
+}
 
-struct ExtractedView: View {
+struct FlagView: View {
     
     var image: Image
     var level: String

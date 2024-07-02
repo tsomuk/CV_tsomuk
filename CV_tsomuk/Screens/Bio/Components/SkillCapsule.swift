@@ -31,5 +31,4 @@ struct SkillCapsule: View {
         SkillCapsule(skill: MockData.skills[5], color: .pink)
         SkillCapsule(skill: MockData.skills[6], color: .pink)
     }
-    .background(.blue.opacity(0.1))
 }

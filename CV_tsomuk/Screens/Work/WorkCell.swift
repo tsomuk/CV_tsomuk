@@ -35,7 +35,7 @@ struct WorkCell: View {
             }
             Text(work.description)
                 .font(.body)
-
+            
             Spacer()
         }
         .padding(.horizontal)

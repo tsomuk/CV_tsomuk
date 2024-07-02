@@ -1,5 +1,5 @@
 //
-//  EducationVoew.swift
+//  EducationView.swift
 //  CV_tsomuk
 //
 //  Created by Nikita Tsomuk on 27.06.2024.

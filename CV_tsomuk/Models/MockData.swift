@@ -10,9 +10,9 @@ import SwiftUI
 
 struct MockData {
     
-   static let skills = ["Swift", "UIKit", "SwiftUI", "Combine", "MVC", "MVP", "MVVM", "Core Data", "Realm", "CocoaPods", "SPM", "Unit/ UI Test", "Agile", "Snapkit", "Kingfisher", "Keychain Wrapper", ]
+    static let skills = ["Swift", "UIKit", "SwiftUI", "Combine", "MVC", "MVP", "MVVM", "Core Data", "Realm", "CocoaPods", "SPM", "Unit/ UI Test", "Agile", "Snapkit", "Kingfisher", "Keychain Wrapper", ]
     
     
     static let gradientPurple = LinearGradient(colors: [.accent, .cvDarkPurple], startPoint: .topLeading, endPoint: .bottomTrailing)
-
+    
 }

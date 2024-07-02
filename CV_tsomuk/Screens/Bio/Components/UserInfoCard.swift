@@ -14,6 +14,7 @@ struct UserInfoCard: View {
             VStack(spacing: 10) {
                 
                 Spacer()
+                
                 Text("Nikita Tsomuk")
                     .font(.title)
                     .fontWeight(.semibold)
@@ -45,9 +46,9 @@ struct UserInfoCard: View {
                     .frame(width: 150, height: 150)
                     .clipShape(Circle())
                     .shadow(radius: 20)
-            Text("")
+                Text("")
                     .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 250)
-//                    .background(.pink)
+                //                    .background(.pink)
             }
             
         }
@@ -58,7 +59,3 @@ struct UserInfoCard: View {
 #Preview {
     UserInfoCard()
 }
-
-
-
-

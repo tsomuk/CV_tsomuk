@@ -9,23 +9,23 @@ import SwiftUI
 
 struct BioView: View {
     var body: some View {
-    
-            ScrollView {
-                VStack(spacing: 15) {
-                    
-//                    UserInfoCard()
-//                    UserInfoCardBig()
-                    UserInfoCardBigAnimation()
-                    
-                    StackView()
-                    
-                    WorkTimerView()
-                    
-                }
-                .padding(.vertical)
+        
+        ScrollView {
+            VStack(spacing: 15) {
+                
+                //                    UserInfoCard()
+                //                    UserInfoCardBig()
+                UserInfoCardBigAnimation()
+                
+                StackView()
+                
+                WorkTimerView()
+                
             }
-            .scrollIndicators(.hidden)
-            .background(.cvBackground)
+            .padding(.vertical)
+        }
+        .scrollIndicators(.hidden)
+        .background(.cvBackground)
     }
 }
 

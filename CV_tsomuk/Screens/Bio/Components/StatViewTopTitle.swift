@@ -30,6 +30,6 @@ struct StatViewTopTitle: View {
     ZStack {
         Color(.pink.opacity(0.2)).ignoresSafeArea()
         StatViewTopTitle(title: "Test", value: 3)
-            
+        
     }
 }

@@ -9,10 +9,7 @@ import SwiftUI
 
 struct UserInfoCardBig: View {
     
-    
-    
     var body: some View {
-        
         
         VStack(spacing: 10) {
             

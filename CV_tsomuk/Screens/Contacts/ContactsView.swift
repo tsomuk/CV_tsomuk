@@ -10,7 +10,6 @@ import SwiftUI
 struct ContactsView: View {
     var body: some View {
         NavigationStack {
-            
             ZStack{
                 Color.cvBackground.ignoresSafeArea()
                 

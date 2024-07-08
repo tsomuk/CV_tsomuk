@@ -15,24 +15,22 @@ struct StackView: View {
             
             VStack(spacing: 10) {
                 HStack(spacing: 8) {
-                    
-                    SkillCapsule(skill: MockData.skills[1], color: .green)
-                    SkillCapsule(skill: MockData.skills[2], color: .green)
-                    SkillCapsule(skill: MockData.skills[4], color: .pink)
-                    SkillCapsule(skill: MockData.skills[5], color: .pink)
-                }
-                
-                
-                HStack(spacing: 8) {
-                    SkillCapsule(skill: MockData.skills[6], color: .pink)
-                    SkillCapsule(skill: MockData.skills[3], color: .pink)
-                    SkillCapsule(skill: MockData.skills[9], color: .blue)
+                    SkillCapsule(skill: Skills.uiKit.title)
+                    SkillCapsule(skill: Skills.swiftUI.title)
+                    SkillCapsule(skill: Skills.mvc.title)
+                    SkillCapsule(skill: MockData.skills[5])
                 }
                 
                 HStack(spacing: 8) {
-                    SkillCapsule(skill: MockData.skills[7], color: .blue)
-                    SkillCapsule(skill: MockData.skills[8], color: .blue)
-                    SkillCapsule(skill: MockData.skills[11], color: .blue)
+                    SkillCapsule(skill: MockData.skills[6])
+                    SkillCapsule(skill: MockData.skills[3])
+                    SkillCapsule(skill: MockData.skills[9])
+                }
+                
+                HStack(spacing: 8) {
+                    SkillCapsule(skill: MockData.skills[7])
+                    SkillCapsule(skill: MockData.skills[8])
+                    SkillCapsule(skill: MockData.skills[11])
                 }
             }
         }

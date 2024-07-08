@@ -18,6 +18,7 @@
 		112D7AB22C2CB17B00FC37DE /* ContactViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D7AB12C2CB17B00FC37DE /* ContactViewItem.swift */; };
 		112D7AB62C2D2B1000FC37DE /* UserInfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D7AB52C2D2B1000FC37DE /* UserInfoCard.swift */; };
 		112D7AB82C2D32BC00FC37DE /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D7AB72C2D32BC00FC37DE /* TestView.swift */; };
+		11375CE82C3BCAC300AFE969 /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11375CE72C3BCAC300AFE969 /* Skills.swift */; };
 		119DECB32C2D5F81005BB723 /* AppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DECB22C2D5F81005BB723 /* AppsView.swift */; };
 		119DECB52C2D5F88005BB723 /* WorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DECB42C2D5F88005BB723 /* WorkView.swift */; };
 		119DECB72C2D5F92005BB723 /* EducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DECB62C2D5F92005BB723 /* EducationView.swift */; };
@@ -53,6 +54,7 @@
 		112D7AB12C2CB17B00FC37DE /* ContactViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewItem.swift; sourceTree = "<group>"; };
 		112D7AB52C2D2B1000FC37DE /* UserInfoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCard.swift; sourceTree = "<group>"; };
 		112D7AB72C2D32BC00FC37DE /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		11375CE72C3BCAC300AFE969 /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
 		119DECB22C2D5F81005BB723 /* AppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsView.swift; sourceTree = "<group>"; };
 		119DECB42C2D5F88005BB723 /* WorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkView.swift; sourceTree = "<group>"; };
 		119DECB62C2D5F92005BB723 /* EducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationView.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				11E3FFAB2C2D501600065E7B /* MockData.swift */,
+				11375CE72C3BCAC300AFE969 /* Skills.swift */,
 				119DECC32C2DD68D005BB723 /* WorkModel.swift */,
 				119DECC52C2DDBB1005BB723 /* EducationModel.swift */,
 				119DECC72C2DDECC005BB723 /* AppModel.swift */,
@@ -311,6 +314,7 @@
 				112D7AB82C2D32BC00FC37DE /* TestView.swift in Sources */,
 				119DECB52C2D5F88005BB723 /* WorkView.swift in Sources */,
 				11E3FFA52C2D431B00065E7B /* UserInfoCardBig.swift in Sources */,
+				11375CE82C3BCAC300AFE969 /* Skills.swift in Sources */,
 				11E3FFA92C2D4CFB00065E7B /* SkillCapsule.swift in Sources */,
 				11C141FB2C2FC3DF00ED62BD /* StackView.swift in Sources */,
 				112D7AB62C2D2B1000FC37DE /* UserInfoCard.swift in Sources */,

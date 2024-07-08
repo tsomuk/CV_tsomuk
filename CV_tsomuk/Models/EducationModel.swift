@@ -34,7 +34,7 @@ struct EducationModel {
                 periodOfStudy: "09.2009 - 06.2014",
                 description: "Specialisation - Automation and intelligent technologies",
                 imageName: "pgups"
-            )
+            ),
         
     ]
 }

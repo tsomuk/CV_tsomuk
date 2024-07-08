@@ -10,25 +10,30 @@ import SwiftUI
 struct SkillCapsule: View {
     
     var skill: String
-    var color: Color
+    var color: Color = .accentColor
+    var background: Color = .clear
     
     var body: some View {
         Text(skill)
             .fontWeight(.semibold)
             .padding(.vertical, 5)
             .padding(.horizontal)
+            .background(background)
+            .foregroundStyle(background == .clear ? Color(.label) : .white)
+            .clipShape(RoundedRectangle(cornerRadius: 20))
             .overlay(
                 RoundedRectangle(cornerRadius: 20)
-                    .stroke(.accent, lineWidth: 3)
+                    .stroke(color, lineWidth: 3)
             )
     }
 }
 
 #Preview {
     HStack {
-        SkillCapsule(skill: MockData.skills[1], color: .green)
-        SkillCapsule(skill: MockData.skills[2], color: .blue)
-        SkillCapsule(skill: MockData.skills[5], color: .pink)
-        SkillCapsule(skill: MockData.skills[6], color: .pink)
+        SkillCapsule(skill: MockData.skills[1])
+        SkillCapsule(skill: MockData.skills[6])
+        SkillCapsule(skill: MockData.skills[2], background: .accent)
+        SkillCapsule(skill: MockData.skills[5])
+        
     }
 }

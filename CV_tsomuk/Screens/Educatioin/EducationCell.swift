@@ -48,6 +48,6 @@ struct EducationCell: View {
 #Preview {
     ScrollView{
         EducationCell(educationModel: EducationModel.dataBase[0])
-        EducationCell(educationModel: EducationModel.dataBase[1])
+//        EducationCell(educationModel: EducationModel.dataBase[1])
     }
 }

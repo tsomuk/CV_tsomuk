@@ -30,6 +30,16 @@ struct MockData {
     ]
     
     
-    static let gradientPurple = LinearGradient(colors: [.accent, .cvDarkPurple], startPoint: .topLeading, endPoint: .bottomTrailing)
+    static let gradientPurple = LinearGradient(
+        colors: [.accent, .cvDarkPurple],
+        startPoint: .topLeading,
+        endPoint: .bottomTrailing
+    )
+    
+    static let gradientDarkPurple = LinearGradient(
+        colors: [.cvBackground, .cvDarkPurple],
+        startPoint: .topLeading,
+        endPoint: .bottomTrailing
+    )
     
 }

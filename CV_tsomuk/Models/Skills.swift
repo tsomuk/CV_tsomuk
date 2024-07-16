@@ -20,6 +20,7 @@ enum Skills: String, CaseIterable {
     case cocoaPods
     case spm
     case unitTest
+    case uiTest
     case agile
     case snapkit
     case kingfisher
@@ -38,7 +39,8 @@ enum Skills: String, CaseIterable {
         case .realm: return "Realm"
         case .cocoaPods: return "CocoaPods"
         case .spm: return "SPM"
-        case .unitTest: return "Unit/ UI Test"
+        case .unitTest: return "Unit Test"
+        case .uiTest: return "UI Test"
         case .agile: return "Agile"
         case .snapkit: return "Snapkit"
         case .kingfisher: return "Kingfisher"

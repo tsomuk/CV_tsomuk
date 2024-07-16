@@ -47,7 +47,7 @@ struct UserInfoCard: View {
                     .clipShape(Circle())
                     .shadow(radius: 20)
                 Text("")
-                    .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 250)
+                    .frame(width: 100, height: 250)
                 //                    .background(.pink)
             }
             

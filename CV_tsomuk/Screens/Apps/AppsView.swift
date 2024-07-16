@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct AppsView: View {
+    
+    @State var selectedFilterIndex = 0
+    
     var body: some View {
         NavigationStack{
             ScrollView(.vertical) {
             VStack(spacing: 0) {
                 ScrollView(.horizontal) {
-                    HStack(spacing: 8) {
-                        ForEach(MockData.skills, id: \.self) { skill in
-                            SkillCapsule(skill: skill, color: .gray)
+                    LazyHStack(spacing: 8) {
+                        ForEach(MockData.skills, id: \.self) { skill  in
+                            SkillCapsule(skill: skill, isSelected: false)
                         }
                     }
                     .padding()

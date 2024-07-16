@@ -15,7 +15,10 @@ struct BioView: View {
                 
                 //                    UserInfoCard()
                 //                    UserInfoCardBig()
-                UserInfoCardBigAnimation()
+                //                UserInfoCardBigAnimation()
+                
+                UserInfoCardGlass()
+                
                 
                 StackView()
                 
@@ -25,7 +28,7 @@ struct BioView: View {
             .padding(.vertical)
         }
         .scrollIndicators(.hidden)
-        .background(.cvBackground)
+        .background(MockData.gradientDarkPurple)
     }
 }
 

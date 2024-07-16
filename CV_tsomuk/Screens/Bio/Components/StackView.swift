@@ -36,7 +36,7 @@ struct StackView: View {
         }
         .padding(.vertical)
         .frame(maxWidth: .infinity)
-        .background(.cvGray)
+        .background(.ultraThinMaterial.opacity(0.2))
         .clipShape(RoundedRectangle(cornerRadius: 20))
         .padding(.horizontal, 16)
         .shadow(radius: 3, y: 3)

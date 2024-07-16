@@ -15,7 +15,8 @@ struct ContactsView: View {
                 
                 VStack(spacing: 8){
                     
-                    LazyVGrid(columns: [GridItem(.flexible()),GridItem(.flexible())], content: {
+                    LazyVGrid(columns: [GridItem(.flexible()),GridItem(.flexible())],
+                              content: {
                         ForEach(ContactModel.dataBaseColor2.prefix(4)) { contact in
                             ContactViewItemMini(contactModel: contact)
                         }

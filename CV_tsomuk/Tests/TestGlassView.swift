@@ -9,7 +9,35 @@ import SwiftUI
 
 struct TestGlassView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            MockData.gradientDarkPurple.ignoresSafeArea()
+            UserInfoCardGlass()
+                .frame(maxHeight: 400)
+                    .background {
+                        ZStack {
+                            Circle()
+                                .foregroundStyle(.blueGradStart)
+                                .frame(width: 151)
+                                .frame(
+                                    maxWidth: .infinity,
+                                    maxHeight: .infinity,
+                                    alignment: .bottomTrailing
+                                )
+                                .offset(x: 55, y: 55)
+                            
+                            
+                            Circle()
+                                .foregroundStyle(.accent)
+                                .frame(width: 151)
+                                .frame(
+                                    maxWidth: .infinity,
+                                    maxHeight: .infinity,
+                                    alignment: .topLeading
+                                )
+                                .offset(x: -35, y: -35)
+                        }
+                    }
+            }
     }
 }
 

@@ -15,7 +15,7 @@ struct UserInfoCardBigAnimation: View {
         
         ZStack{
             CardView()
-            
+//            UserInfoCardBlur()
             // Frame Animation
             Rectangle()
                 .frame(width: 220, height: 550)
@@ -40,7 +40,10 @@ struct UserInfoCardBigAnimation: View {
 }
 
 #Preview {
-    UserInfoCardBigAnimation()
+    ZStack {
+        MockData.gradientDarkPurple.ignoresSafeArea()
+        UserInfoCardBigAnimation()
+    }
 }
 
 
@@ -75,7 +78,7 @@ struct CardView: View {
         }
         .frame(maxWidth: .infinity)
         .frame(height: 370)
-        .background(.cvGray)
+        .background(.ultraThinMaterial.opacity(0.2))
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .padding(.horizontal, 16)
         .shadow(radius: 3, y: 3)

@@ -12,21 +12,26 @@ struct AppCell: View {
     var app: AppModel
     
     var body: some View {
+
         HStack(spacing: 15){
+
             Image(app.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 70, height: 70)
                 .clipShape(RoundedRectangle(cornerRadius: 15))
-            VStack(alignment: .leading){
+            VStack(alignment: .leading) {
                 Text(app.appTitle)
                     .font(.headline)
                     .fontWeight(.semibold)
+                
                 Text(app.description)
                     .font(.footnote)
                 
+            Text("Stack: \(app.stack.map{ $0.title}.joined(separator: ", "))")
+                .font(.footnote)
+                .fontWeight(.semibold)
             }
-            Spacer()
         }
         .padding()
         .frame(maxWidth: .infinity, minHeight: 90)

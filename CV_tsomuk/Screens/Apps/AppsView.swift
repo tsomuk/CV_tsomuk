@@ -9,7 +9,8 @@ import SwiftUI
 
 struct AppsView: View {
     
-    @State var selectedFilterIndex = 0
+    @State var selectedFilterValue = "All"
+    @State var filterArray = []
     
     var body: some View {
         NavigationStack{
@@ -18,8 +19,19 @@ struct AppsView: View {
                 ScrollView(.horizontal) {
                     LazyHStack(spacing: 8) {
                         ForEach(MockData.skills, id: \.self) { skill  in
-                            SkillCapsule(skill: skill, isSelected: false)
+                            if skill == selectedFilterValue {
+                                SkillCapsule(skill: skill, isSelected: true)
+                                    .onTapGesture {
+                                        selectedFilterValue = skill
+                                    }
+                            } else {
+                                SkillCapsule(skill: skill, isSelected: false)
+                                    .onTapGesture {
+                                        selectedFilterValue = skill
+                                    }
+                            }
                         }
+                        
                     }
                     .padding()
                 }

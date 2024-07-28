@@ -47,5 +47,4 @@ struct AppCell: View {
         Color(.gray.withAlphaComponent(0.2)).ignoresSafeArea()
         AppCell(app: AppModel.dataBase[0])
     }
-    .previewLayout(.sizeThatFits) // Не работает
 }

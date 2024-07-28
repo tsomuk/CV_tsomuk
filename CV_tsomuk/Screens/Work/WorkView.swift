@@ -24,9 +24,11 @@ struct WorkView: View {
                 }
                 .overlay(alignment: .bottom) {
                     PagingIndicatoer()
+                        .offset(y: 40)
                 }
             }
             .contentMargins(20)
+            .padding(.bottom, 40)
             .scrollTargetBehavior(.paging)
             .background(.cvBackground)
             .scrollIndicators(.hidden)

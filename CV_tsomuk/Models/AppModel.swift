@@ -20,41 +20,41 @@ struct AppModel {
             appTitle: "MovieQuiz",
             description: "A single-page application featuring quizzes about movies from the top 250 IMDb ratings and the most popular films.",
             imageName: "movieQuiz",
-            stack: [.swiftUI, .uiKit, .agile]
+            stack: [.uiKit, .mvc, .uiTest, .unitTest]
         ),
         .init(
             appTitle: "ImageFeed",
-            description: "A single-page application featuring quizzes about movies from the top 250 IMDb ratings and the most popular films.",
+            description: "Client for the Unsplash service - Infinite photo feed",
             imageName: "imageFeed",
-            stack: [.swiftUI, .uiKit, .agile]
+            stack: [.uiKit, .mvp, .uiTest, .unitTest]
         ),
         .init(
             appTitle: "Habit Tracker",
-            description: "A single-page application featuring quizzes about movies from the top 250 IMDb ratings and the most popular films.",
+            description: "Multiscreen application with CoreData integration allow user track their habits",
             imageName: "tracker",
-            stack: [.uiKit, .unitTest, .mvp]
+            stack: [.uiKit, .mvvm, .coreData, .uiTest, .unitTest]
         ),
         .init(
             appTitle: "NFT Marketplace",
-            description: "A single-page application featuring quizzes about movies from the top 250 IMDb ratings and the most popular films. Users of the application answer questions about the movie ratings sequentially.",
+            description: "Multiscreen application imitate online marketplace with network layers throw the service assebly. There are 3 main flows : Profile, Catalog and Cart",
             imageName: "nftMarket",
-            stack: [.uiKit, .unitTest, .mvp]
+            stack: [.uiKit, .mvc, .uiTest, .unitTest]
         ),
         .init(
             appTitle: "Doct24",
-            description: "A single-page application featuring quizzes about movies from the top 250 IMDb ratings and the most popular films. Users of the application answer questions about the movie ratings sequentially.",
+            description: "In the app possible to have a look to list of the doctors and make an appointment with any of them",
             imageName: "doct24",
-            stack: [.swiftUI, .unitTest, .mvvm]
+            stack: [.swiftUI, .mvvm]
         ),
         .init(
             appTitle: "Messenger",
-            description: "A single-page application featuring quizzes about movies from the top 250 IMDb ratings and the most popular films. Users of the application answer questions about the movie ratings sequentially.",
+            description: "Messenger inside alfa super app. Allows to be connected with friends and clients. Network layer based on WebSockets",
             imageName: "messenger",
             stack: [.swiftUI, .combine, .mvvm]
         ),
         .init(
             appTitle: "Sonotron",
-            description: "A single-page application featuring quizzes about movies from the top 250 IMDb ratings and the most popular films. Users of the application answer questions about the movie ratings sequentially.",
+            description: "Application companion allows have a look to company catalog and all main documentation and manuals for the instruments. Otherwise allow follow to the company news and updates ",
             imageName: "sonotron",
             stack: [.swiftUI, .unitTest, .mvp]
         )

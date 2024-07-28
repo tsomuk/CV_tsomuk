@@ -24,7 +24,17 @@ struct EducationModel {
             universityName: "Practicum",
             speciality: "iOS Developer",
             periodOfStudy: "01.2023 - 04.2044",
-            description: "Maintain Consistency: Consistency is key when using fonts in your iOS app. Choose a primary font or a font pairing that aligns with your app’s branding and stick to it throughout the app. Consistent font usage creates a cohesive and polished user experience.Maintain Consistency: Consistency is key when using fonts in your iOS app.",
+            description: """
+            During the cource, I completed four projects:
+            • Single-page application - Movie quiz based on IMDb API
+            Stack: InterfaceBuilder (UIKit), Networking, User Defaults, MVC, MVP, Git
+            • Client for the Unsplash service - Infinite photo feed
+            Stack: WKWebView, UITableView, ScrollView, SPM, Unit/UI tests, Fork
+            • Habit tracker
+            Stack: UICollectionView, CoreData, MVVM, UIPageViewController, Localization
+            • Online Marketplace - Team project
+            Stack: SnapKit, Networking, MVC, Cocoapods, Git
+            """,
             imageName: "practicum"
         ),
         

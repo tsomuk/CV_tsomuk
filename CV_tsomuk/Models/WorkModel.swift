@@ -23,15 +23,28 @@ struct WorkModel {
             companyName: "Ecosystem Alfa",
             position: "iOS  Developer",
             periodOfWork: "02.2024 - present",
-            description: "Team Lead. Maintain Consistency: Consistency is key when using fonts in your iOS app. Choose a primary font or a font pairing that aligns with your app’s branding and stick to it throughout the app. Consistent font usage creates a cohesive and polished user experience.Maintain Consistency: Consistency is key when using fonts in your iOS app.Maintain Consistency: Consistency is key when using fonts in your iOS app. Choose a primary font or a font pairing that aligns with your app’s branding and stick to it throughout the app. Consistent font usage creates a cohesive and polished user experience.Maintain Consistency: Consistency is key when using fonts in your iOS app.Maintain Consistency: Consistency is key when using fonts in your iOS app.",
+            description: """
+                Development of a messenger inside of Alfa superapp
+                • Implementation of multiple user flows (registration/authorization/user profile)
+                • Implementation network layer
+                • Added SwiftGen and SwiftLint into the project
+                
+                Additionally, performing team lead (team of 4 people) functions:
+                • Code review
+                • Assign and monitor tasks in a team
+                """,
             imageName: "alfa"
         ),
         
             .init(
                 companyName: "Practicum",
-                position: "Junior Mentor",
-                periodOfWork: "04.2020 - present",
-                description: "Share some smart minds. Maintain Consistency: Consistency is key when using fonts in your iOS app. Choose a primary font or a font pairing that aligns with your app’s branding and stick to it throughout the app. Consistent font usage creates a cohesive and polished user experience.Maintain Consistency: Consistency is key when using fonts in your iOS app.Maintain Consistency: Consistency is key when using fonts in your iOS app. Choose a primary font or a font pairing that aligns with your app’s branding and stick to it throughout the app. Consistent font usage creates a cohesive and polished user experience.Maintain Consistency: Consistency is key when using fonts in your iOS app.Maintain Consistency: Consistency is key when using fonts in your iOS app.",
+                position: "iOS Developer Course Mentor",
+                periodOfWork: "03.2020 - present",
+                description: """
+                Helping student achieve their best results.
+                • Interaction in chats: answering questions, checking practical assignments.
+                • Host webinars on the basics of Swift.
+                """,
                 imageName: "practicum"
             ),
         
@@ -39,7 +52,13 @@ struct WorkModel {
                 companyName: "Sonotron NDT",
                 position: "QA Engineer",
                 periodOfWork: "01.2020 - present",
-                description: "Work a lot and have a bit of money.Maintain Consistency: Consistency is key when using fonts in your iOS app. Choose a primary font or a font pairing that aligns with your app’s branding and stick to it throughout the app. Consistent font usage creates a cohesive and polished user experience.Maintain Consistency: Consistency is key when using fonts in your iOS app.Maintain Consistency: Consistency is key when using fonts in your iOS app. Choose a primary font or a font pairing that aligns with your app’s branding and stick to it throughout the app. Consistent font usage creates a cohesive and polished user experience.Maintain Consistency: Consistency is key when using fonts in your iOS app.Maintain Consistency: Consistency is key when using fonts in your iOS app.",
+                description: """
+                Testing native software on Windows for PCs and devices based on Windows.
+                • Smoke, functional, and regression testing.
+                • Conducting exploratory testing.
+                • Creating test documentation (test plans, checklists).
+                • Logging bugs in the tracking system (TFS Microsoft).
+                """,
                 imageName: "sonotron"
             )
     ]

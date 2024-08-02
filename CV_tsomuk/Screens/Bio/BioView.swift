@@ -13,12 +13,11 @@ struct BioView: View {
         ScrollView {
             VStack(spacing: 15) {
                 
-                //                    UserInfoCard()
-                //                    UserInfoCardBig()
-                //                UserInfoCardBigAnimation()
+                //                UserInfoCard()
+                //                UserInfoCardBig()
+                //                UserInfoCardGlass()
                 
-                UserInfoCardGlass()
-                
+                UserInfoCardBigAnimation()
                 
                 StackView()
                 
@@ -28,7 +27,10 @@ struct BioView: View {
             .padding(.vertical)
         }
         .scrollIndicators(.hidden)
-        .background(MockData.gradientDarkPurple)
+        .background(.cvBackground)
+        
+        // Фон для стеклянной темы 
+        //        .background(MockData.gradientDarkPurple)
     }
 }
 

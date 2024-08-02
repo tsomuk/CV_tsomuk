@@ -9,13 +9,13 @@ import SwiftUI
 
 struct SkillCapsule: View {
     
-    var skill: String
+    var skill: Skills
     var color: Color = .accentColor
     
     var isSelected: Bool = false
     
     var body: some View {
-        Text(skill)
+        Text(skill.title)
             .fontWeight(.semibold)
             .padding(.vertical, 5)
             .padding(.horizontal)
@@ -31,10 +31,9 @@ struct SkillCapsule: View {
 
 #Preview {
     HStack {
-        SkillCapsule(skill: MockData.skills[1])
-        SkillCapsule(skill: MockData.skills[6])
-        SkillCapsule(skill: MockData.skills[2], isSelected: true)
-        SkillCapsule(skill: MockData.skills[5])
+        SkillCapsule(skill: Skills.mvvm)
+        SkillCapsule(skill: Skills.networking, isSelected: true)
+        SkillCapsule(skill: Skills.appMetrica)
         
     }
 }

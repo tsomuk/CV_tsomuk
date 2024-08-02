@@ -78,7 +78,7 @@ struct CardView: View {
         }
         .frame(maxWidth: .infinity)
         .frame(height: 370)
-        .background(.ultraThinMaterial.opacity(0.2))
+        .background(.cvGray)
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .padding(.horizontal, 16)
         .shadow(radius: 3, y: 3)

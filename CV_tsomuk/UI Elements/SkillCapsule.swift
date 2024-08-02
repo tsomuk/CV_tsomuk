@@ -12,7 +12,7 @@ struct SkillCapsule: View {
     var skill: String
     var color: Color = .accentColor
     
-    @State var isSelected: Bool = false
+    var isSelected: Bool = false
     
     var body: some View {
         Text(skill)

@@ -31,7 +31,9 @@ struct AppCell: View {
             Text("Stack: \(app.stack.map{ $0.title}.joined(separator: ", "))")
                 .font(.footnote)
                 .fontWeight(.semibold)
+                
             }
+            Spacer()
         }
         .padding()
         .frame(maxWidth: .infinity, minHeight: 90)
@@ -45,6 +47,6 @@ struct AppCell: View {
 #Preview {
     ZStack{
         Color(.gray.withAlphaComponent(0.2)).ignoresSafeArea()
-        AppCell(app: AppModel.dataBase[0])
+        AppCell(app: AppModel.dataBase[1])
     }
 }

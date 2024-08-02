@@ -9,9 +9,8 @@ import SwiftUI
 
 struct AppsView: View {
     
-    @State var selectedFilterValue = "All"
-    @State var filterArray = []
     @State var data = AppModel.dataBase
+    @State var selectedFilterValue: Skills = .all
     
     var body: some View {
         NavigationStack{
@@ -19,12 +18,12 @@ struct AppsView: View {
                 VStack(spacing: 0) {
                     ScrollView(.horizontal) {
                         LazyHStack(spacing: 8) {
-                            ForEach(MockData.skills, id: \.self) { skill  in
+                            ForEach(Skills.allCases, id: \.self) { skill  in
                                 SkillCapsule(skill: skill, isSelected: skill == selectedFilterValue)
                                     .onTapGesture {
                                         selectedFilterValue = skill
+                                        print(selectedFilterValue.title)
                                         filterApp()
-                                        print(selectedFilterValue)
                                     }
                                     .compositingGroup()
                             }
@@ -50,12 +49,12 @@ struct AppsView: View {
     
     
     func filterApp() {
-        if selectedFilterValue == "All" {
+        if selectedFilterValue == .all {
             data = AppModel.dataBase
         } else {
             data = AppModel.dataBase.filter({ app in
                 for skill in app.stack {
-                    if skill.title == selectedFilterValue {
+                    if skill == selectedFilterValue {
                         return true
                     }
                 }

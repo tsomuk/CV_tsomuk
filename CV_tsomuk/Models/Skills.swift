@@ -15,16 +15,22 @@ enum Skills: String, CaseIterable {
     case mvc
     case mvp
     case mvvm
+    case userDefaults
     case coreData
     case realm
     case cocoaPods
     case spm
     case unitTest
     case uiTest
-    case agile
+    case snapshotTest
     case snapkit
     case kingfisher
     case keychainWrapper
+    case wKWebView
+    case localization
+    case appMetrica
+    case networking
+    case asyncAwait
     
     var title: String {
         switch self {
@@ -35,17 +41,22 @@ enum Skills: String, CaseIterable {
         case .mvc: return "MVC"
         case .mvp: return "MVP"
         case .mvvm: return "MVVM"
+        case .userDefaults: return "UserDefaults"
         case .coreData: return "Core Data"
         case .realm: return "Realm"
         case .cocoaPods: return "CocoaPods"
         case .spm: return "SPM"
         case .unitTest: return "Unit Test"
         case .uiTest: return "UI Test"
-        case .agile: return "Agile"
+        case .snapshotTest: return "Snapshot Test"
         case .snapkit: return "Snapkit"
         case .kingfisher: return "Kingfisher"
         case .keychainWrapper: return "Keychain Wrapper"
+        case .wKWebView: return "WKWebView"
+        case .localization: return "Localization"
+        case .appMetrica: return "AppMetrica"
+        case .networking: return "Networking"
+        case .asyncAwait: return "Async/await"
         }
     }
-  
 }

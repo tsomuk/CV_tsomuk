@@ -37,7 +37,7 @@ struct AppCell: View {
         }
         .padding()
         .frame(maxWidth: .infinity, minHeight: 90)
-        .background(.cvGray)
+        .background(MockData.backgroundCard.opacity(MockData.backgroundCardOpacity))
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .shadow(radius: 3, y: 2)
         .padding(.horizontal)

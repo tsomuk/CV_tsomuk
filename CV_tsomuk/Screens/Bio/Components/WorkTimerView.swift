@@ -35,9 +35,7 @@ struct WorkTimerView: View {
         }
         .padding(.vertical)
         .frame(maxWidth: .infinity)
-        //         Фон для стеклянной темы
-        //        .background(.ultraThinMaterial.opacity(0.2))
-        .background(.cvGray)
+        .background(MockData.backgroundCard.opacity(MockData.backgroundCardOpacity))
         .clipShape(RoundedRectangle(cornerRadius: 20))
         .padding(.horizontal, 16)
         .shadow(radius: 3, y: 3)

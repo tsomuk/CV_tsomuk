@@ -25,7 +25,7 @@ struct ContactViewItemMini: View {
         }
         .padding(.vertical)
         .frame(maxWidth: .infinity)
-        .background(.cvGray)
+        .background(MockData.backgroundCard.opacity(MockData.backgroundCardOpacity))
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .shadow(radius: 3, y: 2)
 

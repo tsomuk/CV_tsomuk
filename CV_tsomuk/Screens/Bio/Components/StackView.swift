@@ -38,9 +38,7 @@ struct StackView: View {
         }
         .padding(.vertical)
         .frame(maxWidth: .infinity)
-        //         Фон для стеклянной темы 
-        //        .background(.ultraThinMaterial.opacity(0.2))
-        .background(.cvGray)
+        .background(MockData.backgroundCard.opacity(MockData.backgroundCardOpacity))
         .clipShape(RoundedRectangle(cornerRadius: 20))
         .padding(.horizontal, 16)
         .shadow(radius: 3, y: 3)
@@ -50,5 +48,8 @@ struct StackView: View {
 
 
 #Preview {
-    StackView()
+    ZStack{
+        MockData.gradientPurple.ignoresSafeArea()
+        StackView()
+    }
 }

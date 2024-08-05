@@ -22,7 +22,7 @@ struct EducationView: View {
                 }
                 .padding(.vertical)
             }
-            .background(.cvBackground)
+            .background(MockData.backgroundColorMain)
             .navigationTitle("Education")
         }
     }

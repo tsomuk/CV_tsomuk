@@ -40,8 +40,8 @@ struct AppsView: View {
                     }
                 }
             }
-            .animation(.easeInOut(duration: 0.2),value: data)
-            .background(.cvBackground)
+            .animation(.easeInOut(duration: 0.35),value: data)
+            .background(MockData.backgroundColorMain)
             .navigationTitle("My applications")
         }
     }

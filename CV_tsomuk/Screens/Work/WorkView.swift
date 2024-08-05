@@ -27,10 +27,11 @@ struct WorkView: View {
                         .offset(y: 40)
                 }
             }
-            .contentMargins(20)
+            .contentMargins(.horizontal, 20)
+            .contentMargins(.vertical, 70)
             .padding(.bottom, 40)
             .scrollTargetBehavior(.paging)
-            .background(.cvBackground)
+            .background(MockData.backgroundColorMain)
             .scrollIndicators(.hidden)
             .navigationTitle("Work Experience")
         }

@@ -27,13 +27,9 @@ struct EducationModel {
             description: """
             During the cource, I completed four projects:
             • Single-page application - Movie quiz based on IMDb API
-            Stack: InterfaceBuilder (UIKit), Networking, User Defaults, MVC, MVP, Git
             • Client for the Unsplash service - Infinite photo feed
-            Stack: WKWebView, UITableView, ScrollView, SPM, Unit/UI tests, Fork
-            • Habit tracker
-            Stack: UICollectionView, CoreData, MVVM, UIPageViewController, Localization
-            • Online Marketplace - Team project
-            Stack: SnapKit, Networking, MVC, Cocoapods, Git
+            • Habit tracker - Big application with CoreData storage
+            • Online Marketplace - Team project with network
             """,
             imageName: "practicum"
         ),
@@ -50,3 +46,16 @@ struct EducationModel {
 }
 
 extension EducationModel : Hashable, Identifiable {}
+
+
+//description: """
+//During the cource, I completed four projects:
+//• Single-page application - Movie quiz based on IMDb API
+//Stack: InterfaceBuilder (UIKit), Networking, User Defaults, MVC, MVP, Git
+//• Client for the Unsplash service - Infinite photo feed
+//Stack: WKWebView, UITableView, ScrollView, SPM, Unit/UI tests, Fork
+//• Habit tracker
+//Stack: UICollectionView, CoreData, MVVM, UIPageViewController, Localization
+//• Online Marketplace - Team project
+//Stack: SnapKit, Networking, MVC, Cocoapods, Git
+//"""

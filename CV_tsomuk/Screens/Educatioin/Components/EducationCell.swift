@@ -37,7 +37,7 @@ struct EducationCell: View {
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.cvGray)
+        .background(MockData.backgroundCard.opacity(MockData.backgroundCardOpacity))
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .shadow(radius: 3, y: 2)
         .padding(.horizontal)
@@ -48,6 +48,6 @@ struct EducationCell: View {
 #Preview {
     ScrollView{
         EducationCell(educationModel: EducationModel.dataBase[0])
-//        EducationCell(educationModel: EducationModel.dataBase[1])
+        EducationCell(educationModel: EducationModel.dataBase[1])
     }
 }

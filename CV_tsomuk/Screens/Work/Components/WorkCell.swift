@@ -40,10 +40,9 @@ struct WorkCell: View {
         }
         .padding(.horizontal)
         .padding(.vertical, 15)
-        .background(.cvGray)
+        .background(MockData.backgroundCard.opacity(MockData.backgroundCardOpacity))
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .shadow(radius: 3, y: 2)
-        
         .containerRelativeFrame(.horizontal)
     }
 }
@@ -56,4 +55,5 @@ struct WorkCell: View {
             }
         }
     }
+    .scrollTargetBehavior(.paging)
 }

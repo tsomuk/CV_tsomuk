@@ -27,10 +27,8 @@ struct BioView: View {
             .padding(.vertical)
         }
         .scrollIndicators(.hidden)
-        .background(.cvBackground)
+        .background(MockData.backgroundColorMain)
         
-        // Фон для стеклянной темы 
-        //        .background(MockData.gradientDarkPurple)
     }
 }
 

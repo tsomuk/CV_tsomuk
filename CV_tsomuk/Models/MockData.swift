@@ -21,4 +21,16 @@ struct MockData {
         endPoint: .bottomTrailing
     )
     
+    // MARK: - Global color settings
+    
+//    static let backgroundColorMain = Color.cvBackground
+    static let backgroundColorMain = gradientDarkPurple
+    
+//    static let backgroundCard = Color.cvGray
+    static let backgroundCard = Material.ultraThinMaterial
+    static let backgroundCardOpacity = 0.4
 }
+
+    
+
+

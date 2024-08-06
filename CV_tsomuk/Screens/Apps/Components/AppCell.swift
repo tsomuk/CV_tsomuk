@@ -28,16 +28,17 @@ struct AppCell: View {
                 Text(app.description)
                     .font(.footnote)
                 
-            Text("Stack: \(app.stack.map{ $0.title}.joined(separator: ", "))")
-                .font(.footnote)
-                .fontWeight(.semibold)
+                Text("Stack: \(app.stack.map{ $0.title }.joined(separator: ", "))")
+                    .font(.footnote)
+                    .fontWeight(.semibold)
+                    .padding(.top, 1)
                 
             }
             Spacer()
         }
         .padding()
         .frame(maxWidth: .infinity, minHeight: 90)
-        .background(MockData.backgroundCard.opacity(MockData.backgroundCardOpacity))
+        .background(Settings.backgroundCard.opacity(Settings.backgroundCardOpacity))
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .shadow(radius: 3, y: 2)
         .padding(.horizontal)
@@ -46,7 +47,7 @@ struct AppCell: View {
 
 #Preview {
     ZStack{
-        Color(.gray.withAlphaComponent(0.2)).ignoresSafeArea()
-        AppCell(app: AppModel.dataBase[1])
+        Settings.backgroundColorMain.ignoresSafeArea()
+        AppCell(app: AppModel.dataBase[6])
     }
 }

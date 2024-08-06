@@ -38,7 +38,7 @@ struct UserInfoCardBig: View {
         .foregroundStyle(.white)
         .padding(.vertical, 40)
         .frame(maxWidth: .infinity)
-        .background(MockData.gradientPurple)
+        .background(Settings.gradientPurple)
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .padding(.horizontal, 16)
         .shadow(radius: 3, y: 3)

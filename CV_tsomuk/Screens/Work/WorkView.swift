@@ -31,7 +31,7 @@ struct WorkView: View {
             .contentMargins(.vertical, 70)
             .padding(.bottom, 40)
             .scrollTargetBehavior(.paging)
-            .background(MockData.backgroundColorMain)
+            .background(Settings.backgroundColorMain)
             .scrollIndicators(.hidden)
             .navigationTitle("Work Experience")
         }

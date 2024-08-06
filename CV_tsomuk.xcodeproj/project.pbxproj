@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		111551C02C329624008BBE00 /* PagingIndicatoer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111551BF2C329624008BBE00 /* PagingIndicatoer.swift */; };
-		111551C22C32A16C008BBE00 /* LanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111551C12C32A16C008BBE00 /* LanguageCell.swift */; };
+		111551C22C32A16C008BBE00 /* LanguageCellImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111551C12C32A16C008BBE00 /* LanguageCellImages.swift */; };
 		112D7A9D2C2CAF4600FC37DE /* CV_tsomukApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D7A9C2C2CAF4600FC37DE /* CV_tsomukApp.swift */; };
 		112D7A9F2C2CAF4600FC37DE /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D7A9E2C2CAF4600FC37DE /* TabBarView.swift */; };
 		112D7AA12C2CAF4800FC37DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112D7AA02C2CAF4800FC37DE /* Assets.xcassets */; };
@@ -20,6 +20,7 @@
 		112D7AB82C2D32BC00FC37DE /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D7AB72C2D32BC00FC37DE /* TestView.swift */; };
 		1130D56C2C60E53800678464 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130D56B2C60E53800678464 /* LaunchScreenView.swift */; };
 		11375CE82C3BCAC300AFE969 /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11375CE72C3BCAC300AFE969 /* Skills.swift */; };
+		117972742C6206B800A9DF4D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117972732C6206B800A9DF4D /* Settings.swift */; };
 		119DECB32C2D5F81005BB723 /* AppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DECB22C2D5F81005BB723 /* AppsView.swift */; };
 		119DECB52C2D5F88005BB723 /* WorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DECB42C2D5F88005BB723 /* WorkView.swift */; };
 		119DECB72C2D5F92005BB723 /* EducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DECB62C2D5F92005BB723 /* EducationView.swift */; };
@@ -39,15 +40,15 @@
 		11C141F92C2FC3B000ED62BD /* WorkTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C141F82C2FC3B000ED62BD /* WorkTimerView.swift */; };
 		11C141FB2C2FC3DF00ED62BD /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C141FA2C2FC3DF00ED62BD /* StackView.swift */; };
 		11C142012C31A96700ED62BD /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C142002C31A96700ED62BD /* ContactModel.swift */; };
+		11D890BA2C6105890050CA32 /* LanguageCellEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D890B92C6105890050CA32 /* LanguageCellEmoji.swift */; };
 		11E3FFA32C2D41D200065E7B /* StatViewTopTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3FFA22C2D41D200065E7B /* StatViewTopTitle.swift */; };
 		11E3FFA72C2D441200065E7B /* StatViewBottomTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3FFA62C2D441200065E7B /* StatViewBottomTitle.swift */; };
 		11E3FFA92C2D4CFB00065E7B /* SkillCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3FFA82C2D4CFA00065E7B /* SkillCapsule.swift */; };
-		11E3FFAC2C2D501600065E7B /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3FFAB2C2D501600065E7B /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		111551BF2C329624008BBE00 /* PagingIndicatoer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingIndicatoer.swift; sourceTree = "<group>"; };
-		111551C12C32A16C008BBE00 /* LanguageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCell.swift; sourceTree = "<group>"; };
+		111551C12C32A16C008BBE00 /* LanguageCellImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCellImages.swift; sourceTree = "<group>"; };
 		112D7A992C2CAF4600FC37DE /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		112D7A9C2C2CAF4600FC37DE /* CV_tsomukApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV_tsomukApp.swift; sourceTree = "<group>"; };
 		112D7A9E2C2CAF4600FC37DE /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		112D7AB72C2D32BC00FC37DE /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		1130D56B2C60E53800678464 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		11375CE72C3BCAC300AFE969 /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
+		117972732C6206B800A9DF4D /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		119DECB22C2D5F81005BB723 /* AppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsView.swift; sourceTree = "<group>"; };
 		119DECB42C2D5F88005BB723 /* WorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkView.swift; sourceTree = "<group>"; };
 		119DECB62C2D5F92005BB723 /* EducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationView.swift; sourceTree = "<group>"; };
@@ -79,10 +81,10 @@
 		11C141F82C2FC3B000ED62BD /* WorkTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTimerView.swift; sourceTree = "<group>"; };
 		11C141FA2C2FC3DF00ED62BD /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		11C142002C31A96700ED62BD /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		11D890B92C6105890050CA32 /* LanguageCellEmoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCellEmoji.swift; sourceTree = "<group>"; };
 		11E3FFA22C2D41D200065E7B /* StatViewTopTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatViewTopTitle.swift; sourceTree = "<group>"; };
 		11E3FFA62C2D441200065E7B /* StatViewBottomTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatViewBottomTitle.swift; sourceTree = "<group>"; };
 		11E3FFA82C2D4CFA00065E7B /* SkillCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillCapsule.swift; sourceTree = "<group>"; };
-		11E3FFAB2C2D501600065E7B /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				112D7A9C2C2CAF4600FC37DE /* CV_tsomukApp.swift */,
-				1130D56B2C60E53800678464 /* LaunchScreenView.swift */,
 				112D7A9E2C2CAF4600FC37DE /* TabBarView.swift */,
 				11E3FFAA2C2D500700065E7B /* Models */,
 				11BD52D62C3C139F006D0E79 /* UI Elements */,
@@ -139,6 +140,8 @@
 		112D7AAA2C2CB00C00FC37DE /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1130D56B2C60E53800678464 /* LaunchScreenView.swift */,
+				117972732C6206B800A9DF4D /* Settings.swift */,
 				112D7AAB2C2CB01100FC37DE /* Bio */,
 				119DECAE2C2D5F38005BB723 /* Apps */,
 				119DECB02C2D5F60005BB723 /* Work */,
@@ -207,7 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				119DECBF2C2D6885005BB723 /* EducationCell.swift */,
-				111551C12C32A16C008BBE00 /* LanguageCell.swift */,
+				111551C12C32A16C008BBE00 /* LanguageCellImages.swift */,
+				11D890B92C6105890050CA32 /* LanguageCellEmoji.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -273,7 +277,6 @@
 		11E3FFAA2C2D500700065E7B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				11E3FFAB2C2D501600065E7B /* MockData.swift */,
 				11375CE72C3BCAC300AFE969 /* Skills.swift */,
 				119DECC32C2DD68D005BB723 /* WorkModel.swift */,
 				119DECC52C2DDBB1005BB723 /* EducationModel.swift */,
@@ -357,10 +360,10 @@
 				119DECBC2C2D62A1005BB723 /* TextTest.swift in Sources */,
 				11C141F92C2FC3B000ED62BD /* WorkTimerView.swift in Sources */,
 				11BBE5192C4558D10031A1AA /* TestGlassView.swift in Sources */,
-				11E3FFAC2C2D501600065E7B /* MockData.swift in Sources */,
 				111551C02C329624008BBE00 /* PagingIndicatoer.swift in Sources */,
+				117972742C6206B800A9DF4D /* Settings.swift in Sources */,
 				11BBE5152C454DF40031A1AA /* TransparentBlurView.swift in Sources */,
-				111551C22C32A16C008BBE00 /* LanguageCell.swift in Sources */,
+				111551C22C32A16C008BBE00 /* LanguageCellImages.swift in Sources */,
 				11BBE5172C45538B0031A1AA /* UserInfoCardBig.swift in Sources */,
 				119DECB72C2D5F92005BB723 /* EducationView.swift in Sources */,
 				11A5A2DE2C353B5000222383 /* UserInfoCardBigAnimation.swift in Sources */,
@@ -379,6 +382,7 @@
 				119DECC82C2DDECC005BB723 /* AppModel.swift in Sources */,
 				119DECBE2C2D687D005BB723 /* WorkCell.swift in Sources */,
 				119DECB92C2D600F005BB723 /* AppCell.swift in Sources */,
+				11D890BA2C6105890050CA32 /* LanguageCellEmoji.swift in Sources */,
 				11C142012C31A96700ED62BD /* ContactModel.swift in Sources */,
 				11BBE5132C45341F0031A1AA /* UserInfoCardGlass.swift in Sources */,
 				112D7AAE2C2CB03F00FC37DE /* BioView.swift in Sources */,

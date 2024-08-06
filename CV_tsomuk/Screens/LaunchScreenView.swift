@@ -19,7 +19,7 @@ struct LaunchScreenView: View {
             ZStack{
                 Color.cvBackground.ignoresSafeArea()
                 Circle ()
-                    .fill(MockData.gradientDarkPurple)
+                    .fill(Settings.gradientDarkPurple)
                     .frame(width: 44, height: 44)
                     .scaleEffect(isAnimation ? 1 : 25)
                     .animation(.easeIn, value: true)

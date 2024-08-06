@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct ContactsView: View {
+    
+    @State var isSettingViewShowing = false
+//    @Binding var grayTheme = false
+    
     var body: some View {
         NavigationStack {
             ZStack{
-                MockData.backgroundColorMain.ignoresSafeArea()
+                Settings.backgroundColorMain.ignoresSafeArea()
                 VStack(spacing: 8){
                     
                     LazyVGrid(columns: [GridItem(.flexible()),GridItem(.flexible())],
@@ -28,6 +32,17 @@ struct ContactsView: View {
                 .padding(.horizontal, 15)
             }
             .navigationTitle("Contacts")
+            .toolbar{
+                ToolbarItem {
+                    Button("", systemImage: "gear") {
+                        isSettingViewShowing.toggle()
+                        print("settings")
+                    }
+                }
+            }
+        }
+        .sheet(isPresented: $isSettingViewShowing) {
+            Settings()
         }
     }
 }

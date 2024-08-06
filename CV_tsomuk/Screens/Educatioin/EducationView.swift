@@ -18,11 +18,12 @@ struct EducationView: View {
                     Text("Languages")
                         .font(.largeTitle).bold()
                         .padding(.leading, 20)
-                    LanguageCell()
+//                    LanguageCell()
+                    LanguageCellEmoji()
                 }
                 .padding(.vertical)
             }
-            .background(MockData.backgroundColorMain)
+            .background(Settings.backgroundColorMain)
             .navigationTitle("Education")
         }
     }

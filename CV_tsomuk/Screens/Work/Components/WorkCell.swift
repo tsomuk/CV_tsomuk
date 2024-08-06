@@ -13,11 +13,11 @@ struct WorkCell: View {
     
     var body: some View {
         VStack(spacing: 15) {
-            HStack(alignment: .top, spacing: 15) {
+            HStack(alignment: .center, spacing: 15) {
                 Image(work.imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 70, height: 70)
+                    .frame(width: 80, height: 80)
                     .clipShape(RoundedRectangle(cornerRadius: 15))
                 
                 VStack(alignment: .leading, spacing: 4){
@@ -35,12 +35,13 @@ struct WorkCell: View {
             }
             Text(work.description)
                 .font(.body)
+                .frame(maxWidth: .infinity, alignment: .leading)
             
             Spacer()
         }
         .padding(.horizontal)
         .padding(.vertical, 15)
-        .background(MockData.backgroundCard.opacity(MockData.backgroundCardOpacity))
+        .background(Settings.backgroundCard.opacity(Settings.backgroundCardOpacity))
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .shadow(radius: 3, y: 2)
         .containerRelativeFrame(.horizontal)
@@ -51,7 +52,7 @@ struct WorkCell: View {
     ScrollView (.horizontal){
         HStack{
             ForEach(0..<4) { _ in
-                WorkCell(work: WorkModel.dataBase[0])
+                WorkCell(work: WorkModel.dataBase[2])
             }
         }
     }

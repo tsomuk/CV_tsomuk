@@ -41,7 +41,8 @@ struct AppsView: View {
                 }
             }
             .animation(.easeInOut(duration: 0.35),value: data)
-            .background(MockData.backgroundColorMain)
+            .scrollIndicators(.hidden)
+            .background(Settings.backgroundColorMain)
             .navigationTitle("My applications")
         }
     }

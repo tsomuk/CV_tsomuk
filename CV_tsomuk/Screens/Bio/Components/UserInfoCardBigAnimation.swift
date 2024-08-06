@@ -19,7 +19,7 @@ struct UserInfoCardBigAnimation: View {
             // Frame Animation
             Rectangle()
                 .frame(width: 220, height: 550)
-                .foregroundStyle(MockData.gradientPurple)
+                .foregroundStyle(Settings.gradientPurple)
                 .rotationEffect(.degrees(rotation))
                 .mask {
                     RoundedRectangle(cornerRadius: 20)
@@ -41,7 +41,7 @@ struct UserInfoCardBigAnimation: View {
 
 #Preview {
     ZStack {
-        MockData.gradientDarkPurple.ignoresSafeArea()
+        Settings.gradientDarkPurple.ignoresSafeArea()
         UserInfoCardBigAnimation()
     }
 }
@@ -69,16 +69,19 @@ struct CardView: View {
             Label("Tel-Aviv, Israel", systemImage: "mappin.and.ellipse")
                 .font(.subheadline)
             
-            HStack(spacing: 30) {
-                StatViewBottomTitle(title: "Commits", value: 297)
-                StatViewBottomTitle(title: "Total PRs", value: 22)
-                StatViewBottomTitle(title: "Projects", value: 14)
+            HStack(spacing: 20) {
+                StatViewBottomTitle(title: "Commits", value: 451)
+                    .frame(width: 95)
+                StatViewBottomTitle(title: "Total PRs", value: 23)
+                    .frame(width: 95)
+                StatViewBottomTitle(title: "Repositories", value: 14)
+                    .frame(width: 95)
                 
             } .padding(.top, 30)
         }
         .frame(maxWidth: .infinity)
         .frame(height: 370)
-        .background(MockData.backgroundCard.opacity(MockData.backgroundCardOpacity))
+        .background(Settings.backgroundCard.opacity(Settings.backgroundCardOpacity))
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .padding(.horizontal, 16)
         .shadow(radius: 3, y: 3)

@@ -29,7 +29,7 @@ struct ContactViewItem: View {
         }
         .padding(.horizontal)
         .frame(maxWidth: .infinity, maxHeight: 90)
-        .background(MockData.backgroundCard.opacity(MockData.backgroundCardOpacity))
+        .background(Settings.backgroundCard.opacity(Settings.backgroundCardOpacity))
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .shadow(radius: 3, y: 2)
     }
@@ -40,7 +40,8 @@ struct ContactViewItem: View {
     VStack{
         ContactViewItem(contactModel: ContactModel.dataBaseColor[0])
         ContactViewItem(contactModel: ContactModel.dataBaseColor2[0])
-        ContactViewItem(contactModel: ContactModel.dataBaseMinimalistic[0])
     }
     .padding(.horizontal)
+    .frame(maxWidth: .infinity, maxHeight: .infinity)
+    .background(Settings.backgroundColorMain)
 }

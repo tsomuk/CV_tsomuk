@@ -38,7 +38,7 @@ struct StackView: View {
         }
         .padding(.vertical)
         .frame(maxWidth: .infinity)
-        .background(MockData.backgroundCard.opacity(MockData.backgroundCardOpacity))
+        .background(Settings.backgroundCard.opacity(Settings.backgroundCardOpacity))
         .clipShape(RoundedRectangle(cornerRadius: 20))
         .padding(.horizontal, 16)
         .shadow(radius: 3, y: 3)
@@ -49,7 +49,7 @@ struct StackView: View {
 
 #Preview {
     ZStack{
-        MockData.gradientPurple.ignoresSafeArea()
+        Settings.gradientPurple.ignoresSafeArea()
         StackView()
     }
 }

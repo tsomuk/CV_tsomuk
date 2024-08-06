@@ -27,7 +27,7 @@ struct BioView: View {
             .padding(.vertical)
         }
         .scrollIndicators(.hidden)
-        .background(MockData.backgroundColorMain)
+        .background(Settings.backgroundColorMain)
         
     }
 }

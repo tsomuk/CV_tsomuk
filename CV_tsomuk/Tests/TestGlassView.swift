@@ -16,7 +16,7 @@ struct TestGlassView: View {
     
     var body: some View {
         ZStack{
-            MockData.gradientDarkPurple.ignoresSafeArea()
+            Settings.gradientDarkPurple.ignoresSafeArea()
             UserInfoCardGlass()
                 .frame(maxHeight: 400)
                     .background {

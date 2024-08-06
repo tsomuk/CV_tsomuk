@@ -32,15 +32,6 @@ struct ContactModel {
         .init(contactTitle: "Mobile", description: "053-902-72-52", imageName: "mobile3"),
         .init(contactTitle: "Email", description: "tsomuk@me.com", imageName: "mail3"),
     ]
-    
-    static let dataBaseMinimalistic: [ContactModel] = [
-        .init(contactTitle: "LinkedIn", description: "@tsomuk", imageName: "link2"),
-        .init(contactTitle: "Github", description: "@tsomuk", imageName: "git2"),
-        .init(contactTitle: "Telegram", description: "@tsomuk", imageName: "tg2"),
-        .init(contactTitle: "Mobile", description: "053-902-72-52", imageName: "mobile2"),
-        .init(contactTitle: "Email", description: "tsomuk@me.com", imageName: "mail2"),
-    ]
-    
 }
 
 extension ContactModel : Hashable, Identifiable {}

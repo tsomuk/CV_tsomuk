@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LanguageCell: View {
+struct LanguageCellImages: View {
     var body: some View {
         HStack(spacing: 15) {
             
@@ -29,7 +29,7 @@ struct LanguageCell: View {
 
 #Preview {
     ScrollView{
-        LanguageCell()
+        LanguageCellImages()
         
     }
 }

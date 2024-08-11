@@ -15,6 +15,7 @@ struct WorkTimerView: View {
     
     @State private var timeInterval = Calendar.current.dateComponents([.year,.month, .day, .hour, .minute, .second], from: composedDate!, to: .now)
     
+    let testTimer = Timer.publish(every: 1.0, on: .main, in: .common).autoconnect()
     
     var body: some View {
         VStack(spacing: 10) {
@@ -39,20 +40,20 @@ struct WorkTimerView: View {
         .clipShape(RoundedRectangle(cornerRadius: 20))
         .padding(.horizontal, 16)
         .shadow(radius: 3, y: 3)
-        .onAppear(perform: {
+        .onReceive(testTimer) {_ in 
             startMonitoring()
-        })
+        }
     }
+    
     func startMonitoring() {
-        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
-            DispatchQueue.main.async {
-                withAnimation {
-                    timeInterval = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: composedDate!, to: .now)
-                }
+        DispatchQueue.main.async {
+            withAnimation {
+                timeInterval = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: composedDate!, to: .now)
             }
         }
     }
 }
+
 
 #Preview {
     WorkTimerView()

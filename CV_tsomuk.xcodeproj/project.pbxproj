@@ -21,6 +21,7 @@
 		1130D56C2C60E53800678464 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130D56B2C60E53800678464 /* LaunchScreenView.swift */; };
 		11375CE82C3BCAC300AFE969 /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11375CE72C3BCAC300AFE969 /* Skills.swift */; };
 		117972742C6206B800A9DF4D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117972732C6206B800A9DF4D /* Settings.swift */; };
+		117972772C62509B00A9DF4D /* AppDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117972762C62509B00A9DF4D /* AppDetailView.swift */; };
 		119DECB32C2D5F81005BB723 /* AppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DECB22C2D5F81005BB723 /* AppsView.swift */; };
 		119DECB52C2D5F88005BB723 /* WorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DECB42C2D5F88005BB723 /* WorkView.swift */; };
 		119DECB72C2D5F92005BB723 /* EducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DECB62C2D5F92005BB723 /* EducationView.swift */; };
@@ -62,6 +63,7 @@
 		1130D56B2C60E53800678464 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		11375CE72C3BCAC300AFE969 /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
 		117972732C6206B800A9DF4D /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		117972762C62509B00A9DF4D /* AppDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailView.swift; sourceTree = "<group>"; };
 		119DECB22C2D5F81005BB723 /* AppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsView.swift; sourceTree = "<group>"; };
 		119DECB42C2D5F88005BB723 /* WorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkView.swift; sourceTree = "<group>"; };
 		119DECB62C2D5F92005BB723 /* EducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationView.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				119DECB22C2D5F81005BB723 /* AppsView.swift */,
+				117972762C62509B00A9DF4D /* AppDetailView.swift */,
 				1130D56D2C60EEBB00678464 /* Components */,
 			);
 			path = Apps;
@@ -369,6 +372,7 @@
 				11A5A2DE2C353B5000222383 /* UserInfoCardBigAnimation.swift in Sources */,
 				119DECC62C2DDBB1005BB723 /* EducationModel.swift in Sources */,
 				119DECC02C2D6885005BB723 /* EducationCell.swift in Sources */,
+				117972772C62509B00A9DF4D /* AppDetailView.swift in Sources */,
 				112D7AB82C2D32BC00FC37DE /* TestView.swift in Sources */,
 				119DECB52C2D5F88005BB723 /* WorkView.swift in Sources */,
 				11375CE82C3BCAC300AFE969 /* Skills.swift in Sources */,

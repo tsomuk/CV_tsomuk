@@ -12,6 +12,8 @@ struct AppsView: View {
     @State var data = AppModel.dataBase
     @State var selectedFilterValue: Skills = .all
     
+    @State var selectedApp: AppModel?
+    
     var body: some View {
         NavigationStack{
             ScrollView(.vertical) {
@@ -22,12 +24,10 @@ struct AppsView: View {
                                 SkillCapsule(skill: skill, isSelected: skill == selectedFilterValue)
                                     .onTapGesture {
                                         selectedFilterValue = skill
-                                        print(selectedFilterValue.title)
                                         filterApp()
                                     }
                                     .compositingGroup()
                             }
-                            
                         }
                         .padding()
                     }
@@ -36,6 +36,9 @@ struct AppsView: View {
                     VStack(spacing: 15) {
                         ForEach(data) { app in
                             AppCell(app: app)
+                                .onTapGesture {
+                                        selectedApp = app
+                                }
                         }
                     }
                 }
@@ -44,10 +47,11 @@ struct AppsView: View {
             .scrollIndicators(.hidden)
             .background(Settings.backgroundColorMain)
             .navigationTitle("My applications")
+            .fullScreenCover(item: $selectedApp) { app in
+                AppDetailView(app: app)
+            }
         }
     }
-    
-    
     
     func filterApp() {
         if selectedFilterValue == .all {
@@ -62,7 +66,6 @@ struct AppsView: View {
                 return false
             })
         }
-        
     }
 }
 

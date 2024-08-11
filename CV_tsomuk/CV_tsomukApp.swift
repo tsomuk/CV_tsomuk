@@ -12,6 +12,7 @@ struct CV_tsomukApp: App {
     var body: some Scene {
         WindowGroup {
             LaunchScreenView()
+                .preferredColorScheme(.dark)
         }
     }
 }

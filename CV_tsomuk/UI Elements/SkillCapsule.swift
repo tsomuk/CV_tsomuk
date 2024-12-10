@@ -11,7 +11,6 @@ struct SkillCapsule: View {
     
     var skill: Skills
     var color: Color = .accentColor
-    
     var isSelected: Bool = false
     
     var body: some View {

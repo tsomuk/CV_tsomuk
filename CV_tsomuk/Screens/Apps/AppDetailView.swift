@@ -37,12 +37,12 @@ struct AppDetailView: View {
                     .fontWeight(.semibold)
                     .frame(width: 280, alignment: .leading)
                     
-                HStack {
-                    Image(systemName: "star.fill")
-                    Text("5.0 • 120 reviews")
-                }
-                .font(.system(size: 16))
-                .padding(.bottom, 15)
+//                HStack {
+//                    Image(systemName: "star.fill")
+//                    Text("5.0 • 120 reviews")
+//                }
+//                .font(.system(size: 16))
+//                .padding(.bottom, 15)
                 
                 Button {
                     dismiss()
@@ -55,7 +55,7 @@ struct AppDetailView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                 }
             }
-            .padding(.bottom, 50)
+            .padding(.bottom, 30)
             .padding(.horizontal, 40)
             .frame(maxWidth: .infinity, alignment: .leading)
             

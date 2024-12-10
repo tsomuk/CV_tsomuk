@@ -37,17 +37,20 @@ struct AppsView: View {
                         ForEach(data) { app in
                             AppCell(app: app)
                                 .onTapGesture {
-                                        selectedApp = app
+                                    selectedApp = app
                                 }
                         }
                     }
                 }
             }
-            .animation(.easeInOut(duration: 0.35),value: data)
+            .animation(.spring(duration: 0.35),value: data)
             .scrollIndicators(.hidden)
             .background(Settings.backgroundColorMain)
             .navigationTitle("My applications")
             .fullScreenCover(item: $selectedApp) { app in
+                AppDetailView(app: app)
+            }
+            .navigationDestination(for: AppModel.self) { app in
                 AppDetailView(app: app)
             }
         }

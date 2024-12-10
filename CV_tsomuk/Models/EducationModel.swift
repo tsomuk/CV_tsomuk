@@ -17,9 +17,17 @@ struct EducationModel {
     let description : String
     let imageName: String
     
-    
-    
     static let dataBase: [EducationModel] = [
+        .init(
+            universityName: "Yandex 360",
+            speciality: "iOS Developer Hackathon",
+            periodOfStudy: "11.2024 - 12.2044",
+            description: """
+            Development of a mini note-taking application with a WYSIWYG editor that supports Markdown and saves files to the device’s file system.
+            The application is implemented as a standalone, easily integrable Swift package
+            """,
+            imageName: "y360"
+        ),
         .init(
             universityName: "Practicum",
             speciality: "iOS Developer",
@@ -33,15 +41,13 @@ struct EducationModel {
             """,
             imageName: "practicum"
         ),
-        
             .init(
                 universityName: "St.Petersburg State Transport University",
                 speciality: "II Academic degree - Engineer",
                 periodOfStudy: "09.2009 - 06.2014",
                 description: "Specialisation - Automation and intelligent technologies",
                 imageName: "pgups"
-            ),
-        
+            )
     ]
 }
 

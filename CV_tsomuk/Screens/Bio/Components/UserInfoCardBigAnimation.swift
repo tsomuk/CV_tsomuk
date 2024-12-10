@@ -70,11 +70,11 @@ struct CardView: View {
                 .font(.subheadline)
             
             HStack(spacing: 20) {
-                StatViewBottomTitle(title: "Commits", value: 451)
+                StatViewBottomTitle(title: "Projects", value: 14)
                     .frame(width: 95)
                 StatViewBottomTitle(title: "Total PRs", value: 23)
                     .frame(width: 95)
-                StatViewBottomTitle(title: "Repositories", value: 14)
+                StatViewBottomTitle(title: "Contributions", value: 532)
                     .frame(width: 95)
                 
             } .padding(.top, 30)

@@ -20,8 +20,6 @@ struct TestView: View {
                 .fontWeight(.bold)
                 .foregroundStyle(.gray)
             
-            
-            
             HStack(spacing: 40){
                 
                 Button {

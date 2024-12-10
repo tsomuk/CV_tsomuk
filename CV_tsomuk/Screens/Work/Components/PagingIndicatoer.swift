@@ -14,10 +14,8 @@ struct PagingIndicatoer: View {
     
     var body: some View {
         GeometryReader {
-            //            let width = $0.size.width
             if let scrollViewWidth = $0.bounds(of: .scrollView(axis: .horizontal))?.width, scrollViewWidth > 0 {
                 let minX = $0.frame(in: .scrollView(axis: .horizontal)).minX
-                //                let totalPages = Int(width / scrollViewWidth)
                 let totalPages = WorkModel.dataBase.count
                 let freeProgress = -minX / scrollViewWidth
                 

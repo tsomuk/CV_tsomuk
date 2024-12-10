@@ -12,14 +12,13 @@ struct AppCell: View {
     var app: AppModel
     
     var body: some View {
-
-        HStack(spacing: 15){
-
+        HStack(spacing: 15) {
             Image(app.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 70, height: 70)
                 .clipShape(RoundedRectangle(cornerRadius: 15))
+            
             VStack(alignment: .leading) {
                 Text(app.appTitle)
                     .font(.headline)
@@ -34,6 +33,8 @@ struct AppCell: View {
                     .padding(.top, 1)
                 
             }
+            .multilineTextAlignment(.leading)
+            
             Spacer()
         }
         .padding()

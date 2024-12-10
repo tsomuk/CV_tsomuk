@@ -23,7 +23,7 @@ struct ContactModel {
         .init(contactTitle: "Mobile", description: "053-902-72-52", imageName: "mobile"),
         .init(contactTitle: "Email", description: "tsomuk@me.com", imageName: "mail"),
     ]
-    
+    // Other icons
     static let dataBaseColor2: [ContactModel] = [
         .init(contactTitle: "LinkedIn", description: "@tsomuk", imageName: "link3"),
         .init(contactTitle: "Github", description: "@tsomuk", imageName: "git3"),

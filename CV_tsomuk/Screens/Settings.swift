@@ -30,15 +30,11 @@ struct Settings: View {
     static let backgroundCard = Material.ultraThinMaterial
     static let backgroundCardOpacity = 0.4
     
-    
-    
     @State var theme = false
     @State var theme2 = false
     @State var theme3 = false
     
     var body: some View {
-        
-        
         VStack(spacing: 10){
             Toggle("First setting", isOn: $theme).padding()
                 .background(Settings.backgroundCard)
@@ -47,7 +43,6 @@ struct Settings: View {
             Toggle("Second setting ", isOn: $theme2).padding()
                 .background(Settings.backgroundCard)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
-            
         }
         .padding(.horizontal, 30)
         .toggleStyle(SwitchToggleStyle(tint: .accent))

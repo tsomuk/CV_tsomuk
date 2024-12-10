@@ -15,10 +15,7 @@ struct WorkModel {
     let description : String
     let imageName: String
     
-    
-    
     static let dataBase: [WorkModel] = [
-        
         .init(
             companyName: "Ecosystem Alfa, Russia",
             position: "iOS  Developer",
@@ -38,11 +35,10 @@ struct WorkModel {
                 """,
             imageName: "alfa"
         ),
-        
             .init(
                 companyName: "Practicum, Russia",
                 position: "iOS Developer Course Mentor",
-                periodOfWork: "03.2020 - present",
+                periodOfWork: "02.2020 - present",
                 description: """
                 Helping student achieve their best results.
                 • Interaction in chats: answering questions, checking practical assignments.
@@ -55,7 +51,6 @@ struct WorkModel {
                 """,
                 imageName: "practicum"
             ),
-        
             .init(
                 companyName: "Sonotron NDT, Israel",
                 position: "QA Engineer & \niOS Developer",

@@ -32,18 +32,18 @@ struct ContactsView: View {
                 .padding(.horizontal, 15)
             }
             .navigationTitle("Contacts")
-            .toolbar{
-                ToolbarItem {
-                    Button("", systemImage: "gear") {
-                        isSettingViewShowing.toggle()
-                        print("settings")
-                    }
-                }
-            }
+//            .toolbar{
+//                ToolbarItem {
+//                    Button("", systemImage: "gear") {
+//                        isSettingViewShowing.toggle()
+//                        print("settings")
+//                    }
+//                }
+//            }
         }
-        .sheet(isPresented: $isSettingViewShowing) {
-            Settings()
-        }
+//        .sheet(isPresented: $isSettingViewShowing) {
+//            Settings()
+//        }
     }
 }
 

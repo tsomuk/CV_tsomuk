@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-private let startDate = DateComponents(calendar: Calendar.current, year: 2023, month: 1, day: 6)
+private let startDate = DateComponents(calendar: Calendar.current, year: 2023, month: 1, day: 12)
 
 private let composedDate = Calendar.current.date(from: startDate)
 

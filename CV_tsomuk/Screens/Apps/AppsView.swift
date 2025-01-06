@@ -11,7 +11,6 @@ struct AppsView: View {
     
     @State var data = AppModel.dataBase
     @State var selectedFilterValue: Skills = .all
-    
     @State var selectedApp: AppModel?
     
     var body: some View {
@@ -43,7 +42,7 @@ struct AppsView: View {
                     }
                 }
             }
-            .animation(.spring(duration: 0.35),value: data)
+            .animation(.spring(duration: 0.35), value: data)
             .scrollIndicators(.hidden)
             .background(Settings.backgroundColorMain)
             .navigationTitle("My applications")
@@ -56,7 +55,7 @@ struct AppsView: View {
         }
     }
     
-    func filterApp() {
+    private func filterApp() {
         if selectedFilterValue == .all {
             data = AppModel.dataBase
         } else {

@@ -60,7 +60,7 @@ struct AppModel {
             stack: [.swiftUI, .combine, .mvvm, .keychainWrapper, .asyncAwait]
         ),
         .init(
-            appTitle: "Sonotron",
+            appTitle: "Sonotron NDT",
             description: "Application companion allows have a look to company catalog and all main documentation and manuals for the instruments. Otherwise allow follow to the company news and updates ",
             imageName: "sonotron",
             detailImage: "sonotron_detail",

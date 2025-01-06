@@ -8,28 +8,27 @@
 import SwiftUI
 
 struct BioView: View {
+    
+    @State private var isLoading: Bool = true
+    
     var body: some View {
-        
         ScrollView {
             VStack(spacing: 15) {
-                
-                //                UserInfoCard()
-                //                UserInfoCardBig()
-                //                UserInfoCardGlass()
-                
-                UserInfoCardBigAnimation()
-                
+                CardViewAnimationBuilder(isLoading: isLoading)
                 StackView()
-                
                 WorkTimerView()
-                
             }
             .padding(.vertical)
         }
         .scrollIndicators(.hidden)
         .background(Settings.backgroundColorMain)
-        
+        .task { await loadData() }
     }
+    
+   private func loadData() async {
+       try? await Task.sleep(for: .seconds(3))
+       isLoading = false
+   }
 }
 
 

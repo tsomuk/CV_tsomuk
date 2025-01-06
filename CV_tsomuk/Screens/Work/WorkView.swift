@@ -8,35 +8,50 @@
 import SwiftUI
 
 struct WorkView: View {
+    
+    @State private var selected: WorkModel?
+    
     var body: some View {
         NavigationStack{
-            ScrollView(.horizontal) {
-                LazyHStack(spacing: 10) {
-                    ForEach(WorkModel.dataBase) { work in
-                        WorkCell(work: work)
-                            .scrollTransition(axis: .horizontal) { content, phase in
-                                content.scaleEffect(
-                                    x: phase.isIdentity ? 1 : 0.6,
-                                    y: phase.isIdentity ? 1 : 0.6
-                                )
-                            }
+            VStack {
+                ScrollView(.horizontal) {
+                    HStack(spacing: 0) {
+                        ForEach(WorkModel.dataBase) { work in
+                            WorkCell(work: work)
+                                .scrollTransition(axis: .horizontal) { content, phase in
+                                    content.scaleEffect(phase.isIdentity ? 1 : 0.8)
+                                }
+                                .id(work)
+                        }
+                    }
+                    
+                }
+                .scrollTargetLayout()
+                .scrollTargetBehavior(.paging)
+                .scrollIndicators(.hidden)
+                .scrollPosition(id: $selected)
+                .padding(24)
+                
+                HStack(spacing: 8) {
+                    ForEach(WorkModel.dataBase) { item in
+                        RoundedRectangle(cornerRadius: 10)
+                            .foregroundStyle(item == selected ? .accent : .accent.opacity(0.3))
+                            .frame(width: item == selected ? 20 : 10, height: 10)
                     }
                 }
-                .overlay(alignment: .bottom) {
-                    PagingIndicatoer()
-                        .offset(y: 40)
-                }
+                .padding(.bottom, 12)
+                
             }
-            .contentMargins(.horizontal, 20)
-            .contentMargins(.vertical, 70)
-            .padding(.bottom, 40)
-            .scrollTargetBehavior(.paging)
             .background(Settings.backgroundColorMain)
-            .scrollIndicators(.hidden)
             .navigationTitle("Work Experience")
+        }
+        .animation(.smooth, value: selected)
+        .onAppear {
+            selected = WorkModel.dataBase.first
         }
     }
 }
+
 
 #Preview {
     WorkView()

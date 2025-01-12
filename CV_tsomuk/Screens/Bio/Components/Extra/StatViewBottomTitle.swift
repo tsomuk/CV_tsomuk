@@ -15,15 +15,17 @@ struct StatViewBottomTitle: View {
     
     var body: some View {
         VStack{
-            if isLoading {
-                ProgressView()
-            } else {
+            ZStack {
                 Text(String(value))
                     .font(.system(size: 23))
                     .fontWeight(.semibold)
+                    .opacity(isLoading ? 0 : 1)
+                ProgressView()
+                    .opacity(isLoading ? 1 : 0)
             }
-            Text(title)
-                .font(.subheadline)
+        
+        Text(title)
+            .font(.subheadline)
         }
     }
 }
@@ -33,7 +35,11 @@ struct StatViewBottomTitle: View {
         Color.accentColor.opacity(0.5).ignoresSafeArea()
         HStack(spacing: 30){
             StatViewBottomTitle(title: "Test", value: 32)
-            StatViewBottomTitle(title: "Test", value: 32, isLoading: true)
+            StatViewBottomTitle(
+                title: "Test",
+                value: 32,
+                isLoading: true
+            )
         }
     }
 }
